@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/index-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
+            </a>
+            <form class="search-form" action="" method="get">
+                <input name="search" placeholder="" type="search">
+                <button type="submit">Поиск</button>
+            </form>
+            <ul class="user-navigation">
+                <li><a href="login.html">Войти</a></li>
+                <li><a href="compare.html">Сравнить</a></li>
+                <li><a href="basket.html">Корзина</a></li>
+            </ul>
+            <a href="catalog.html" class="dropdown">каталог товаров</a>
+            <ul class="site-navigation">
+                <li><a href="delivery.html">доставка</a></li>
+                <li><a href="warranty.html">гарантия</a></li>
+                <li><a href="contacts.html">контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  </body>
+    <main>
+
+        <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
+
+        <section class="about">
+            <h2 class="section-title">О нас</h2>
+            <p class="about-info">
+                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            </p>
+            <p class="about-info">
+                Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+                компаниями:
+            </p>
+            <ul class="partners">
+                <li>Деловые Линии</li>
+                <li>Автотрейдинг</li>
+                <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="about.html" class="about-details">подробнее о нас</a>
+        </section>
+
+        <section class="contacts">
+            <h2 class="section-title">Контакты</h2>
+            <p class="contacts-info">
+                Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
+                покупки. Всякое бывает.
+            </p>
+            <a class="map">
+                <img src="img/map.jpg" width="560" height="222" alt="Карта">
+            </a>
+            <a href="contacts.html" class="contact-us">напишите нам</a>
+        </section>
+    </main>
+
+    <footer>
+        <a class="main-header-logo">
+            <img src="img/index-logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
+        </a>
+        <ul class="user-navigation">
+            <li><a href="login.html">Войти</a></li>
+            <li><a href="compare.html">Сравнить</a></li>
+            <li><a href="basket.html">Корзина</a></li>
+        </ul>
+        <address>г. Москва, ул. Строителей, 15</address>
+        <ul class="site-navigation">
+            <li><a href="delivery.html">доставка</a></li>
+            <li><a href="warranty.html">гарантия</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+        </ul>
+        <span class="tel">Тел.:<a href="tel:74954959595"> +7 (495) 495-95-95</a></span>
+        <ul class="social">
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+        </ul>
+        <div class="developer-logo"></div>
+    </footer>
+
+</body>
+
 </html>
