@@ -9,50 +9,111 @@
 <body>
   <header class="header">
     <nav class="header-navigation">
-      <a class="header-logo">device</a>
+      <a class="header-logo" href="index.html">device</a>
       <div class="header-top">
         <form class="search-form" action="" method="get">
           <input name="search" placeholder="поиск по сайту" type="search">
           <button type="submit">Поиск</button>
         </form>
         <ul class="user-navigation">
-          <li><a class="site-navigation-username">Валентин Петухов</a></li>
-          <li><a class="site-navigation-login">Войти</a></li>
-          <li><a class="site-navigation-compare">Сравнить</a></li>
-          <li><a class="site-navigation-basket">Корзина</a></li>
+          <li><a class="user-navigation-username" href="#">Валентин Петухов</a></li>
+          <li><a class="user-navigation-login" href="#">Войти</a></li>
+          <li><a class="user-navigation-compare" href="#">Сравнить</a></li>
+          <li><a class="user-navigation-basket" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="header-bottom">
         <a href="catalog.html" class="dropdown">каталог товаров</a>
         <ul class="site-navigation">
-          <li><a class="site-navigation-delivery">доставка</a></li>
-          <li><a class="site-navigation-warranty">гарантия</a></li>
-          <li><a class="site-navigation-contacts">контакты</a></li>
+          <li><a class="site-navigation-delivery" href="#">доставка</a></li>
+          <li><a class="site-navigation-warranty" href="#">гарантия</a></li>
+          <li><a class="site-navigation-contacts" href="#">контакты</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
-    <h2>Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
-      </ul>
-<section class="filter">
-  <form action="" class="filter-form">
-    
-  </form>
-
-  <section class="goods">
-    
-  </section>
-</section>
+    <h1 class="visually-hidden">Каталог интернет-магазина гаджетов «Девайс»</h1>
+    <h2 class="category-title">Моноподы для селфи</h2>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог товаров</a></li>
+      <li class="breadcrumbs-current">Моноподы для селфи</li>
+    </ul>
+    <section class="filter">
+      <form action="" class="filter-form">
+        <p class="filter-title"><strong>Цвет</strong></p>
+        <p><input type="checkbox" name="black" value="yes" checked>Черный</p>
+        <p><input type="checkbox" name="white" value="yes">Белый</p>
+        <p><input type="checkbox" name="blue" value="yes" checked>Синий</p>
+        <p><input type="checkbox" name="red" value="yes" checked>Красный</p>
+        <p><input type="checkbox" name="pink" value="yes">Розовый</p>
+        <p class="filter-title"><strong>Bluetooth</strong></p>
+        <p><input name="bluetooth" type="radio" value="yes" checked>Есть</p>
+        <p><input name="bluetooth" type="radio" value="no">Нет</p>
+        <p><input type="submit" value="Показать"></p>
+      </form>
+      <section class="goods">
+        <h3 class="visually-hidden">Список товаров</h3>
+        <ul class="goods-list">
+          <li class="goods-item">
+            <h4>
+              <a href="#">
+                <span class="goods-item-name">Любительская селфи-палка</span>
+                <span class="goods-item-price">500 руб.</span>
+              </a>
+            </h4>
+            <p class="goods-item-image">
+              <a href="#">
+                <img src="img/product1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              </a>
+            </p>
+          </li>
+          <li class="goods-item">
+            <h3>
+              <a href="#">
+                <span class="goods-item-name">Профессиональная селфи-палка</span>
+                <span class="goods-item-price">1 500 руб.</span>
+              </a>
+            </h3>
+            <p class="goods-item-image">
+              <a href="#">
+                <img src="img/product3.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              </a>
+            </p>
+          </li>
+          <li class="goods-item">
+            <h3>
+              <a href="#">
+                <span class="goods-item-name">Непотопляемая селфи-палка</span>
+                <span class="goods-item-price">2 500 руб.</span>
+              </a>
+            </h3>
+            <p class="goods-item-image">
+              <a href="#">
+                <img src="img/product3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </a>
+            </p>
+          </li>
+          <li class="goods-item">
+            <h3>
+              <a href="#">
+                <span class="goods-item-name">Селфи-палка «Следуй за мной»</span>
+                <span class="goods-item-price">4 900 руб.</span>
+              </a>
+            </h3>
+            <p class="goods-item-image">
+              <a href="#">
+                <img src="img/product4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              </a>
+            </p>
+          </li>
+      </section>
+    </section>
   </main>
   <footer>
     <div class="footer-top">
-      <a class="header-logo">device</a>
+      <a class="footer-logo" href="index.html">device</a>
       <ul class="user-navigation">
         <li><a class="site-navigation-username">Валентин Петухов</a></li>
         <li><a class="site-navigation-login">Войти</a></li>
@@ -63,9 +124,9 @@
     <div class="footer-middle">
       <address>г. Москва, ул. Строителей, 15</address>
       <ul class="site-navigation">
-        <li><a href="delivery.html">доставка</a></li>
-        <li><a href="warranty.html">гарантия</a></li>
-        <li><a href="contacts.html">контакты</a></li>
+        <li><a href="#">доставка</a></li>
+        <li><a href="#">гарантия</a></li>
+        <li><a href="#">контакты</a></li>
       </ul>
       <span class="tel">Тел.:<a href="tel:74954959595"> +7 (495) 495-95-95</a></span>
     </div>
