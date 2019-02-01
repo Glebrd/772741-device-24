@@ -89,13 +89,39 @@
     </div>
     <div class="footer-bottom">
       <ul class="social">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
       </ul>
       <div class="developer-logo"></div>
     </div>
   </footer>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">
+      Как до нас добраться
+    </h2>
+    <p>
+      <img src="img/bigmap.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+    </p>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+  </section>
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Форма связи</h2>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <label>Ваше имя: <input class="write-us-form-name" id="name" type="text" name="name" placeholder="Имя Фамилия"></label>
+        <label>Ваш e-mail: <input class="write-us-form-email" id="e-mail" type="text" name="email" placeholder="email@example.com"></label>
+        <label>Текст письма: <textarea class="write-us-form-letter-text" id="letter-text" type="text" name="letter-text" placeholder="В свободной форме"></textarea></label>
+      <button class="button" type="submit">
+        Отправить
+      </button>
+    </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+  </section>
 </body>
 
 </html>
