@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <nav class="header-navigation">
-      <a class="header-logo" href="#">DEVICE</a>
+      <a class="header-logo" href="#">Device</a>
       <div class="header-top">
         <form class="search-form" action="" method="get">
           <input name="search" placeholder="поиск по сайту" type="search">
@@ -22,8 +22,8 @@
         </ul>
       </div>
       <div class="header-bottom">
-        <a class="dropdown">КАТАЛОГ ТОВАРОВ</a>
-        <ul class="dropdown-list"> 
+        <a class="dropdown">Каталог товаров</a>
+        <ul class="dropdown-list">
           <li><a class="dropdown-list-item" href="#">Виртуальная реальность</a></li>
           <li><a class="dropdown-list-item" href="#">Моноподы для селфи</a></li>
           <li><a class="dropdown-list-item" href="#">Экшн-камеры</a></li>
@@ -32,15 +32,43 @@
           <li><a class="dropdown-list-item" href="#">Квадрокоптеры</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a class="site-navigation-item" href="#">ДОСТАВКА</a></li>
-          <li><a class="site-navigation-item" href="#">ГАРАНТИЯ</a></li>
-          <li><a class="site-navigation-contacts site-navigation-item" href="#">КОНТАКТЫ</a></li>
+          <li><a class="site-navigation-item" href="#">Доставка</a></li>
+          <li><a class="site-navigation-item" href="#">Гарантия</a></li>
+          <li><a class="site-navigation-contacts site-navigation-item" href="#">Контакты</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
     <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
+    <section class="first slide">
+      <img class="slide-image" src="img/slider-1.png" alt="Селфи-палка">
+      <img src="" alt="">
+      <div class=item-info>
+        <span class="slider-title">Делай селфи,<br> как Бен Стиллер!</span>
+        <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине.
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+        </p>
+        <a href="#" class="about-details">Подробнее о нас</a>
+        <button class="first-slide" aria-label="Показать первый слайд"></button>
+        <button aria-label="Показать второй слайд"></button>
+        <button aria-label="Показать третий слайд"></button>
+        <table class="item-features">
+          <tr>
+            <td>8,5 м</td>
+            <td>Длина палки</td>
+          </tr>
+          <tr>
+            <td>5 кг</td>
+            <td>Вес палки</td>
+          </tr>
+          <tr>
+            <td>Карбон</td>
+            <td>Материал</td>
+          </tr>
+        </table>
+      </div>
+    </section>
     <section class="about">
       <h2 class="about-title">О нас</h2>
       <p class="about-text">
@@ -55,7 +83,7 @@
         <li class="about-partners-item">Автотрейдинг</li>
         <li class="about-partners-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a href="about.html" class="about-details">ПОДРОБНЕЕ О НАС</a>
+      <a href="#" class="about-details">Подробнее о нас</a>
     </section>
     <section class="contacts">
       <h2 class="contacts-title">Контакты</h2>
@@ -66,12 +94,12 @@
       <a class="map" href="img/bigmap.jpg">
         <img src="img/map.jpg" width="560" height="222" alt="Карта">
       </a>
-      <a href="contacts.html" class="contact-us">НАПИШИТЕ НАМ</a>
+      <a href="contacts.html" class="contact-us">Напишите нам</a>
     </section>
   </main>
   <footer>
     <div class="footer-top">
-      <a class="header-logo">DEVICE</a>
+      <a class="header-logo">Device</a>
       <ul class="user-navigation">
         <li><a class="user-navigation-login user-navigation-item" href="#">Войти</a></li>
         <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
@@ -81,17 +109,17 @@
     <div class="footer-middle">
       <address class="footer-address">г. Москва, ул. Строителей, 15</address>
       <ul class="site-navigation">
-        <li><a class="site-navigation-item" href="#">ДОСТАВКА</a></li>
-        <li><a class="site-navigation-item" href="#">ГАРАНТИЯ</a></li>
-        <li><a class="site-navigation-item" href="#">КОНТАКТЫ</a></li>
+        <li><a class="site-navigation-item" href="#">Доставка</a></li>
+        <li><a class="site-navigation-item" href="#">Гарантия</a></li>
+        <li><a class="site-navigation-item" href="#">Контакты</a></li>
       </ul>
       <span class="footer-tel">Тел.:<a href="tel:74954959595"> +7 (495) 495-95-95</a></span>
     </div>
     <div class="footer-bottom">
       <ul class="social">
-        <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-        <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+        <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+        <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
+        <li><a class="social-button" href="#" aria-label="Твиттер"></a></li>
       </ul>
       <div class="developer-logo"></div>
     </div>
@@ -111,9 +139,9 @@
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Форма связи</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>Ваше имя: <input class="write-us-form-name"  type="text" name="name" placeholder="Имя Фамилия"></label>
-        <label>Ваш e-mail: <input class="write-us-form-email"  type="text" name="email" placeholder="email@example.com"></label>
-        <label>Текст письма: <textarea class="write-us-form-letter-text"  type="text" name="letter-text" placeholder="В свободной форме"></textarea></label>
+      <label>Ваше имя: <input class="write-us-form-name" type="text" name="name" placeholder="Имя Фамилия"></label>
+      <label>Ваш e-mail: <input class="write-us-form-email" type="text" name="email" placeholder="email@example.com"></label>
+      <label>Текст письма: <textarea class="write-us-form-letter-text" type="text" name="letter-text" placeholder="В свободной форме"></textarea></label>
       <button class="button write-us-form-botton" type="submit">
         Отправить
       </button>
