@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <nav class="header-navigation">
-      <a class="header-logo" href="#">Device</a>
+      <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
       <div class="header-top">
         <form class="search-form" action="" method="get">
           <input name="search" placeholder="поиск по сайту" type="search">
@@ -22,10 +22,10 @@
         </ul>
       </div>
       <div class="header-bottom">
-        <a class="dropdown">Каталог товаров</a>
+        <a href="catalog.html" class="dropdown">Каталог товаров</a>
         <ul class="dropdown-list">
           <li><a class="dropdown-list-item" href="#">Виртуальная реальность</a></li>
-          <li><a class="dropdown-list-item" href="#">Моноподы для селфи</a></li>
+          <li><a class="dropdown-list-item" href="catalog.html">Моноподы для селфи</a></li>
           <li><a class="dropdown-list-item" href="#">Экшн-камеры</a></li>
           <li><a class="dropdown-list-item" href="#">Фитнес-браслеты</a></li>
           <li><a class="dropdown-list-item" href="#">Умные часы</a></li>
@@ -41,67 +41,67 @@
   </header>
   <main>
     <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
-    <section class="first slide">
-      <img class="slide-image" src="img/slider-1.png" alt="Селфи-палка">
-      <img src="" alt="">
-      <div class=item-info>
-        <span class="slider-title"><span class="slider-title-number">01</span>Делай селфи,<br> как Бен Стиллер!</span>
-        <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине.
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href="#" class="about-details">Подробнее о нас</a>
-        <button class="first-slide" aria-label="Показать первый слайд" type="button"></button>
-        <button aria-label="Показать второй слайд" type="button"></button>
-        <button aria-label="Показать третий слайд" type="button"></button>
-        <table class="item-features">
-          <tr>
-            <td>8,5 м</td>
-            <th>Длина палки</th>
-          </tr>
-          <tr>
-            <td>5 кг</td>
-            <th>Вес палки</th>
-          </tr>
-          <tr>
-            <td>Карбон</td>
-            <th>Материал</th>
-          </tr>
-        </table>
-      </div>
-    </section>
+    <ul class="features-slider">
+      <li class="first-slide">
+        <img class="slide-image" src="img/slider-1.png" alt="Селфи-палка">
+        <img src="" alt="">
+        <div class=item-info>
+          <span class="slider-title-number">01</span>
+          <p class="slider-title">Делай селфи,<br> как Бен Стиллер!</p>
+          <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href="#" class="about-details button">Подробнее</a>
+          <table class="features-table">
+            <tr>
+              <td>8,5 м</td>
+              <th>Длина палки</th>
+            </tr>
+            <tr>
+              <td>5 кг</td>
+              <th>Вес палки</th>
+            </tr>
+            <tr>
+              <td>Карбон</td>
+              <th>Материал</th>
+            </tr>
+          </table>
+        </div>
+      </li>
+    </ul>
     <section class="categories">
       <ul class="category-list">
-        <li class="category-item"><a class="category-link" href="#">
+        <li class="category-item">
+          <a class="category-link" href="#">
             <h2 class="category-name">Виртуальная реальность</h2>
-            <div class="category-image"></div>
           </a></li>
-        <li class="category-item"><a class="category-link" href="#">
+        <li class="category-item">
+          <a class="category-link" href="catalog.html">
             <h2 class="category-name">Моноподы для селфи</h2>
-            <div class="category-image"></div>
           </a></li>
-        <li class="category-item"><a class="category-link" href="#">
+        <li class="category-item">
+          <a class="category-link" href="#">
             <h2 class="category-name">Экшн-камеры</h2>
-            <div class="category-image"></div>
           </a></li>
-        <li class="category-item"><a class="category-link" href="#">
+        <li class="category-item">
+          <a class="category-link" href="#">
             <h2 class="category-name">Фитнес-браслеты</h2>
-            <div class="category-image"></div>
           </a></li>
-        <li class="category-item"><a class="category-link" href="#">
+        <li class="category-item">
+          <a class="category-link" href="#">
             <h2 class="category-name">Умные часы</h2>
-            <div class="category-image"></div>
           </a></li>
-        <li class="category-item"><a class="category-link" href="#">
+        <li class="category-item">
+          <a class="category-link" href="#">
             <h2 class="category-name">Квадрокоптеры</h2>
-            <div class="category-image"></div>
           </a></li>
       </ul>
     </section>
     <section class="services">
       <ul class="services-list">
-        <li class="services-list-item"><button class="button" type="button">Доставка</button></li>
-        <li class="services-list-item"><button class="button" type="button">Гарантия</button></li>
-        <li class="services-list-item"><button class="button" type="button">Кредит</button></li>
+        <li class="services-list-item"><label>Доставка<input type="text"></label></li>
+        <li class="services-list-item"><label>Гарантия<input type="text"></label></li>
+        <li class="services-list-item"><label>Кредит<input type="text"></label></li>
       </ul>
       <h3 class="service-name">Доставка</h3>
       <p class="service-description">
@@ -110,12 +110,12 @@
       </p>
     </section>
     <section class="partners">
-      <h3 class="visually-hidden">Наши партнёры</h3>
-      <ul class="partners-list">
-        <li class="partners-item"><a href="#"><img src="img/logo-dji.jpg" alt="Dji"></a></li>
-        <li class="partners-item"><a href="#"><img src="img/logo-sp.jpg" alt="SP Gadgets"></a></li>
-        <li class="partners-item"><a href="#"><img src="img/logo-gopro.jpg" alt="GoPro"></a></li>
-        <li class="partners-item"><a href="#"><img src="img/logo-vive.jpg" alt="Vive"></a></li>
+      <h3 class="visually-hidden">Наши бренды</h3>
+      <ul class="brands-list">
+        <li class="brands-item"><a href="#"><img src="img/logo-dji.jpg" alt="Dji"></a></li>
+        <li class="brands-item"><a href="#"><img src="img/logo-sp.jpg" alt="SP Gadgets"></a></li>
+        <li class="brands-item"><a href="#"><img src="img/logo-gopro.jpg" alt="GoPro"></a></li>
+        <li class="brands-item"><a href="#"><img src="img/logo-vive.jpg" alt="Vive"></a></li>
       </ul>
     </section>
     <section class="about">
@@ -148,7 +148,7 @@
   </main>
   <footer>
     <div class="footer-top">
-      <a class="header-logo">Device</a>
+      <img src="img/logo-orange.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
       <ul class="user-navigation">
         <li><a class="user-navigation-login user-navigation-item" href="#">Войти</a></li>
         <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
@@ -166,9 +166,9 @@
     </div>
     <div class="footer-bottom">
       <ul class="social">
-        <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
-        <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
-        <li><a class="social-button" href="#" aria-label="Твиттер"></a></li>
+        <li><a class="social-button social-button-facebook" href="#" aria-label="Мы в Фейсбуке"></a></li>
+        <li><a class="social-button social-button-instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+        <li><a class="social-button social-button-twitter" href="#" aria-label="Мы в Твиттере"></a></li>
       </ul>
       <div class="developer-logo"></div>
     </div>
