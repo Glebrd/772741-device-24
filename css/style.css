@@ -1,13 +1,12 @@
-
 @font-face {
-  font-family: "Gilroy Extra Bold";
+  font-family: "Gilroy - Extra Bold";
   src: url("../fonts/gilroyextrabold.woff") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
 
 @font-face {
-  font-family: "Gilroy Extra Bold";
+  font-family: "Gilroy - Extra Bold";
   src: url("../fonts/gilroyextrabold.woff2") format("truetype");
   font-weight: bold;
   font-style: bold;
@@ -27,23 +26,128 @@
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 body {
   margin: 0;
-  padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
 
-  background-color: #000000;
-  background-image: url("img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+}
+
+.header-top,
+.header-bottom {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.button-search {
+width: 85px;
+height: 49px;
+border: 2px solid #000000;
+background: transparent;
+}
+
+.button-search:hover{
+background-color: #000000;
+color: #ffffff;
+}
+
+.button-search:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+  }
+  
+
+.user-navigation,
+.dropdown-list,
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  color: #000000;
+}
+
+
+.user-navigation a,
+.dropdown-list a,
+.site-navigation a,
+.dropdown {
+  color: #000000;
+}
+
+.logo:hover,
+.user-navigation a:hover,
+.dropdown-list a:hover,
+.site-navigation a:hover,
+.dropdown:hover {
+  opacity: 0.6;
+}
+
+.logo:active,
+.user-navigation a:active,
+.dropdown-list a:active,
+.site-navigation a:active,
+.dropdown:active {
+  opacity: 0.3;
+}
+
+
+
+.site-navigation a,
+.dropdown {
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.features-slider {
+  list-style: none;
+}
+
+
+.slider-title {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 56px;
+}
+
+.slider-title-number {
+  color: #ffffff;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 179px;
+  font-weight: 400;
+  line-height: 179.2px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
 
 a {
   text-decoration: none;
@@ -67,6 +171,32 @@ a {
   background-color: #663d15;
 }
 
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .main-navigation {
   font-size: 16px;
   line-height: 20px;
@@ -74,6 +204,36 @@ a {
 
   background-color: #000000;
 }
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
 
 .site-navigation,
 .user-navigation {
@@ -226,4 +386,4 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
-}
+} */
