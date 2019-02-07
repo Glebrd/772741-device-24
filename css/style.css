@@ -34,6 +34,7 @@ body {
   color: #464646;
 
   background-color: #ffffff;
+
 }
 
 a {
@@ -55,15 +56,43 @@ a {
 }
 
 .button-search {
+  background: transparent;
+  color: transparent;
+  border: none;
+}
+.search-form:hover .button-search{
   width: 85px;
   height: 49px;
-  border: 2px solid #000000;
+  border: 2px transparent;
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
   background: transparent;
+  float: right;
+  color: #000000;
 }
 
-.button-search:hover {
-  background-color: #000000;
+
+.search-form:hover {
+  height: 49px;
+  border-right: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  background: transparent;
+  width: 441px;
+}
+
+.search-input {
+  background-color: rgba(240, 197, 46, 0);
+  border: 0;
+  width: 356px;
+  padding-left: 40px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+.search-form .button-search:hover {
+  background-color: red;
   color: #ffffff;
+  z-index: 5;
 }
 
 .button-search:active {
