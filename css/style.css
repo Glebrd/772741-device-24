@@ -34,7 +34,6 @@ body {
   color: #464646;
 
   background-color: #ffffff;
-
 }
 
 a {
@@ -59,8 +58,10 @@ a {
   background: transparent;
   color: transparent;
   border: none;
+
 }
-.search-form:hover .button-search{
+
+.search-form:focus-within .button-search {
   width: 85px;
   height: 49px;
   border: 2px transparent;
@@ -69,10 +70,35 @@ a {
   background: transparent;
   float: right;
   color: #000000;
+  cursor: pointer;
+}
+
+.search-form:focus-within>.button-search:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-form:focus-within>.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
-.search-form:hover {
+.search-form {
+  width: 441px;
+}
+
+.search-input {
+  background-color: rgba(240, 197, 46, 0);
+  color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  width: 356px;
+  padding-left: 40px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+  outline: none;
+}
+
+.search-form:focus-within {
   height: 49px;
   border-right: 2px solid #000000;
   border-bottom: 2px solid #000000;
@@ -80,19 +106,12 @@ a {
   width: 441px;
 }
 
-.search-input {
-  background-color: rgba(240, 197, 46, 0);
-  border: 0;
-  width: 356px;
-  padding-left: 40px;
-  padding-top: 19px;
-  padding-bottom: 15px;
+.search-form:hover .search-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.search-form .button-search:hover {
-  background-color: red;
-  color: #ffffff;
-  z-index: 5;
+.search-form:focus-within .search-input {
+  color: rgba(0, 0, 0, 1);
 }
 
 .button-search:active {
@@ -113,7 +132,6 @@ a {
 .dropdown {
   color: #000000;
 }
-
 
 .user-navigation a:hover,
 .dropdown-list a:hover,
@@ -136,6 +154,7 @@ a {
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .features-slider {
@@ -172,6 +191,21 @@ a {
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
+  padding-top: 15px;
+  width: 220px;
+  border: none;
+  background-image: linear-gradient(180deg, #ffffff, #ffffff 44.3%, #f0c52e 33.3%, #f0c52e 56.6%, #ffffff 56.6%, #ffffff 100%);
+  display: block;
+  text-align: center;
+  min-height: 40px;
+}
+
+.button:hover {
+  background-image: linear-gradient(#f0c52e, #f0c52e);
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .features-definition {
@@ -199,6 +233,10 @@ a {
   line-height: 24px;
 }
 
+.category-name:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
 .services {
   background-color: #e5e5e5;
 }
@@ -219,10 +257,15 @@ a {
   list-style: none;
 }
 
-.brands-item:hover {
-  transition: 0.5s;
+.brands-item {
   filter: grayscale(100%);
   opacity: 0.2;
+}
+
+.brands-item:hover {
+  filter: none;
+  opacity: 1;
+  transition: 1s;
 }
 
 .about-title {
@@ -262,7 +305,7 @@ a {
 
 .footer-user-navigation .user-navigation-item {
   color: rgba(255, 255, 255, 0.7);
-  }
+}
 
 .footer-user-navigation .user-navigation-item:hover {
   color: rgba(255, 255, 255, 1);
@@ -286,10 +329,13 @@ a {
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .footer-site-navigation .site-navigation-item:hover {
-  color: rgba(255, 255, 255, 0.6);}
+  color: rgba(255, 255, 255, 0.6);
+}
 
 .footer-site-navigation .site-navigation-item:active {
   color: rgba(255, 255, 255, 0.3);
+}
