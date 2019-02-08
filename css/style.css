@@ -16,6 +16,20 @@
   font-weight: 800;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-compontent {
+  box-sizing: content-box;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -62,7 +76,7 @@ a {
 }
 
 .search-form:focus-within .button-search {
-  width: 85px;
+  width: 83px;
   height: 49px;
   border: 2px transparent;
   border-left: 2px solid #000000;
@@ -340,13 +354,30 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.write-us-form input[type="text"] {
+.write-us-form input[type="text"],
+.write-us-form input[type="email"] {
   font: inherit;
   background-color: rgba(242, 242, 242, 1);
   border: none;
   width: 360px;
   height: 50px;
   padding-left: 20px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input[type="text"]:invalid,
+.write-us-form input[type="email"]:invalid {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input[type="text"]:focus,
+.write-us-form input[type="email"]:focus,
+.write-us-form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid #f0c52e;
+  outline: none;
+  color: #464646;
 }
 
 .write-us-form textarea {
@@ -358,6 +389,7 @@ a {
   height: 156px;
   border: none;
   font: inherit;
+  color: rgba(70, 70, 70, 0.4);
 }
 
 button.button {
@@ -366,29 +398,169 @@ button.button {
 }
 
 .category-title {
-color: #000000;
-font-family: "Gilroy";
-font-size: 47px;
-font-weight: 800;
-line-height: 48px;}
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+}
 
 .breadcrumbs {
   list-style: none;
 }
-.breadcrumbs-item {
-color: rgba(0,0,0,0.3);
-font-family: "Open Sans";
-font-size: 14px;
-font-weight: 300;
-line-height: 24px;
+
+.breadcrumbs-item,
+.sort-item a {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
-.filter-header {
-color: #000000;
-font-family: "Gilroy - Extra Bold";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-transform: uppercase;
-letter-spacing: 0.91px;
+.breadcrumbs-item:hover,
+.sort-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-item:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.sort-item a:active,
+.sort-item-current a {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+
+.filter-header,
+.sort-header {
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-item {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.goods-list {
+  list-style: none;
+}
+
+.goods-item-name {
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.goods-item-price {
+  color: #464646;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.goods-item-image img:hover {
+  background-color: #eeeeee;
+  opacity: 0.7;
+}
+
+.compare {
+  line-height: 20px;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.compare:hover {
+  color: #000000;
+}
+
+.compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.page-navigation {
+  width: 760px;
+  height: 70px;
+  padding: 1px;
+  background-color: rgba(235, 235, 235, 1);
+  display: flex;
+}
+
+.page-numbers {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.prev,
+.next {
+  display: block;
+  width: 137px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 24px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgb(216, 216, 216)
+}
+
+.prev:active,
+.next:active {
+  color: rgba(216, 216, 216, 0.3)
+}
+
+.page-number:not(:first-child) {
+  margin-left: 31px;
+}
+
+.page-number a {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.page-number a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page-number a:active,
+.page-number-current a {
+  color: rgba(0, 0, 0, 1);
 }
