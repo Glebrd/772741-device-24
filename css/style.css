@@ -339,3 +339,56 @@ a {
 .footer-site-navigation .site-navigation-item:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.write-us-form input[type="text"] {
+  font: inherit;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  width: 360px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.write-us-form textarea {
+  resize: none;
+  background-color: rgba(242, 242, 242, 1);
+  padding-top: 18px;
+  padding-left: 20px;
+  width: 760px;
+  height: 156px;
+  border: none;
+  font: inherit;
+}
+
+button.button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.category-title {
+color: #000000;
+font-family: "Gilroy";
+font-size: 47px;
+font-weight: 800;
+line-height: 48px;}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs-item {
+color: rgba(0,0,0,0.3);
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+}
+
+.filter-header {
+color: #000000;
+font-family: "Gilroy - Extra Bold";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+letter-spacing: 0.91px;
+}
