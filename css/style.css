@@ -54,9 +54,13 @@ a {
   text-decoration: none;
 }
 
+.header-navigation {
+  background-color: rgba(240, 197, 46, 0.5);
+  min-height: 299px;
+}
+
 .header-top,
 .header-bottom {
-  background-color: rgba(240, 197, 46, 0.5);
   border: 1px solid transparent;
 }
 
@@ -205,13 +209,13 @@ a {
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 8px;
   width: 220px;
   border: none;
   background-image: linear-gradient(180deg, #ffffff, #ffffff 44.3%, #f0c52e 33.3%, #f0c52e 56.6%, #ffffff 56.6%, #ffffff 100%);
   display: block;
   text-align: center;
-  min-height: 40px;
+  height: 40px;
 }
 
 .button:hover {
@@ -563,4 +567,49 @@ button.button {
 .page-number a:active,
 .page-number-current a {
   color: rgba(0, 0, 0, 1);
+}
+
+/* Позциционирование */
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 20px;
+}
+
+.header {
+  margin-top: 40px;
+  
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.user-navigation {
+  display: flex;
+}
+.dropdown-list {
+  display: none;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.features-slider li {
+display: flex;
+margin-top: -126px;
+padding-left: 50px;
+min-height: 592px;
+justify-content: space-between;
+}
+
+.features-table {
+  display: none;
 }
