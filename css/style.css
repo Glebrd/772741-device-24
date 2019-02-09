@@ -54,9 +54,8 @@ a {
   text-decoration: none;
 }
 
-.header-navigation {
-  background-color: rgba(240, 197, 46, 0.5);
-  min-height: 299px;
+.header {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 40px, rgba(240, 197, 46, 0.5) 40px, rgba(240, 197, 46, 0.5) 226px);
 }
 
 .header-top,
@@ -256,7 +255,7 @@ a {
 }
 
 .services {
-  background-color: #e5e5e5;
+  background-image: linear-gradient(180deg, #ffffff, #ffffff 100px, #e5e5e5 100px, #e5e5e5 388px);
 }
 
 .services-list {
@@ -314,9 +313,7 @@ a {
   line-height: 48px;
 }
 
-.footer-top,
-.footer-bottom,
-.footer-middle {
+footer {
   background-color: #464646;
   border: 1px solid transparent;
 }
@@ -577,18 +574,21 @@ button.button {
   padding: 0 20px;
 }
 
+
 .header {
-  margin-top: 40px;
-  
+  min-height: 226px;
+
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
 }
+
 .user-navigation {
   display: flex;
 }
+
 .dropdown-list {
   display: none;
 }
@@ -602,14 +602,82 @@ button.button {
   display: flex;
 }
 
+.features-slider {
+  margin: 0;
+  padding-left: 0;
+}
+
 .features-slider li {
-display: flex;
-margin-top: -126px;
-padding-left: 50px;
-min-height: 592px;
-justify-content: space-between;
+  display: flex;
+  padding-left: 90px;
+  padding-top: 2px;
+  min-height: 594px;
+  justify-content: space-between;
+  background-image: linear-gradient(180deg, rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5) 113px, rgba(255, 255, 255, 1) 113px, rgba(255, 255, 255, 1) 594px);
 }
 
 .features-table {
+  display: none;
+}
+
+.categories {
+  min-height: 322px;
+  background: red;
+}
+
+.services-list{
+  margin: 0;
+}
+
+.category-name {
+  margin: 0;
+  max-width: 125px;
+  
+}
+
+.category-list {
+  margin: 0;
+  display: flex;
+}
+
+.services {
+  min-height: 388px;
+}
+
+.service-name {
+  margin-top: 0;
+}
+
+.services-list {
+  margin-top: 0;
+}
+
+.brands-list {
+  display: flex;
+  min-height: 287px;
+  background-color: red;
+  margin-top: 0;
+}
+
+.about-contacts-wrapper {
+  min-height: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  min-height: 323px;
+}
+
+.footer-top,
+.footer-middle,
+.footer-bottom,
+.footer-user-navigation,
+.footer-site-navigation {
+  display: flex;
+}
+
+.modal-map,
+.modal-write-us {
   display: none;
 }
