@@ -722,3 +722,19 @@ footer {
 .sort-list {
   display: flex;
 }
+
+li.second-slide {
+  display: none;
+}
+
+li.third-slide {
+  display: none;
+}
+
+li.services-third-slide,
+li.services-second-slide {
+  display: none;
+}
+.services-slider {
+  margin-top: 0;
+}
