@@ -394,8 +394,7 @@ footer {
 }
 
 button.button {
-  padding-top: 20px;
-  padding-bottom: 20px;
+background-image: linear-gradient(180deg, #ffffff, #ffffff 54.3%, #f0c52e 54.3%, #f0c52e 67.6%, #ffffff 67.6%, #ffffff 100%);
 }
 
 .category-title {
@@ -625,14 +624,14 @@ button.button {
   background: red;
 }
 
-.services-list{
+.services-list {
   margin: 0;
 }
 
 .category-name {
   margin: 0;
   max-width: 125px;
-  
+
 }
 
 .category-list {
@@ -657,10 +656,11 @@ button.button {
   min-height: 287px;
   background-color: red;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-contacts-wrapper {
-  min-height: 640px;
+  min-height: 655px;
   display: flex;
   justify-content: space-between;
 }
@@ -680,4 +680,45 @@ footer {
 .modal-map,
 .modal-write-us {
   display: none;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+
+.main-middle-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 20px;
+}
+
+
+.filter {
+  max-width: 330px;
+}
+
+.sort {
+  display: flex;
+  max-width: 468px;
+}
+
+.main-right {
+  max-width: 800px;
+  padding-left: 73px;
+}
+.color, .bluetooth {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+ padding-left: 0;
+}
+
+.sort-list {
+  display: flex;
 }
