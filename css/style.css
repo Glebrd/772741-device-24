@@ -394,7 +394,7 @@ footer {
 }
 
 button.button {
-background-image: linear-gradient(180deg, #ffffff, #ffffff 54.3%, #f0c52e 54.3%, #f0c52e 67.6%, #ffffff 67.6%, #ffffff 100%);
+  background-image: linear-gradient(180deg, #ffffff, #ffffff 54.3%, #f0c52e 54.3%, #f0c52e 67.6%, #ffffff 67.6%, #ffffff 100%);
 }
 
 .category-title {
@@ -692,11 +692,15 @@ footer {
   margin: 0 auto;
   width: 1200px;
   padding: 0 20px;
+  
 }
 
+.main-middle-wrapper {
+background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
+}
 
 .filter {
-  max-width: 330px;
+  max-width: 328px;
 }
 
 .sort {
@@ -707,8 +711,11 @@ footer {
 .main-right {
   max-width: 800px;
   padding-left: 73px;
+  background-color: #ffffff;
 }
-.color, .bluetooth {
+
+.color,
+.bluetooth {
   display: flex;
   flex-direction: column;
 }
@@ -716,7 +723,7 @@ footer {
 .goods-list {
   display: flex;
   flex-wrap: wrap;
- padding-left: 0;
+  padding-left: 0;
 }
 
 .sort-list {
@@ -735,6 +742,7 @@ li.services-third-slide,
 li.services-second-slide {
   display: none;
 }
+
 .services-slider {
   margin-top: 0;
 }
