@@ -542,7 +542,7 @@ button.button {
 
 .prev:active,
 .next:active {
-  color: rgba(216, 216, 216, 0.3)
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .page-number:not(:first-child) {
