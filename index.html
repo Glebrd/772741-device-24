@@ -48,8 +48,16 @@
   <main>
     <div class="container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
+      <div class="slider-controls">
+        <label for="first-slide">Первый</label>
+        <label for="second-slide">Второй</label>
+        <label for="third-slide">Третий</label>
+      </div>
+          <input class="visually-hidden" type="radio" id="first-slide" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="second-slide" name="toggle">
+          <input class="visually-hidden" type="radio" id="third-slide" name="toggle">
       <ul class="features-slider">
-        <li class="first-slide">
+        <li class="first-slide slide" id="slide1">
           <img class="slide-image" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
           <div class=item-info>
             <span class="slider-title-number">01</span>
@@ -74,7 +82,7 @@
             </table>
           </div>
         </li>
-        <li class="second-slide">
+        <li class="second-slide slide" id="slide2">
           <img class="slide-image" src="img/slider-2.png" width="384" height="486" alt="Селфи-палка">
           <div class=item-info>
             <span class="slider-title-number">02</span>
@@ -89,9 +97,10 @@
                 <td class="features-definition">48 часов</td>
                 <th class="features-header">Без подзарядки</th>
               </tr>
+              </table>
           </div>
         </li>
-        <li class="third-slide">
+        <li class="third-slide slide" id="slide3">
           <img class="slide-image" src="img/slider-3.png" width="384" height="486" alt="Селфи-палка">
           <div class=item-info>
             <span class="slider-title-number">03</span>

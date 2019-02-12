@@ -617,9 +617,6 @@ button.button {
   background-image: linear-gradient(180deg, rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5) 113px, rgba(255, 255, 255, 1) 113px, rgba(255, 255, 255, 1) 594px);
 }
 
-.features-table {
-  display: none;
-}
 
 .categories {
   min-height: 322px;
@@ -732,6 +729,11 @@ background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff
   display: flex;
 }
 
+li.first-slide {
+  display: none;
+}
+
+
 li.second-slide {
   display: none;
 }
@@ -840,4 +842,40 @@ header {
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+position: absolute;
+bottom: 203px;
+left: 383px;
+z-index: 20;
+font-size: 0;
+}
+
+#first-slide:checked~.features-slider #slide1,
+#second-slide:checked~.features-slider #slide2,
+#third-slide:checked~.features-slider #slide3 {
+  display: flex;
+}
+
+.features-table tr{
+  display: flex;
+  flex-direction: column;
+}
+.features-table tbody{
+  display: flex;
 }
