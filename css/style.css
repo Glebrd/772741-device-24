@@ -746,3 +746,37 @@ li.services-second-slide {
 .services-slider {
   margin-top: 0;
 }
+
+/* Микросетка */
+header {
+  padding-top: 22px;
+  padding-left: 59px;
+  padding-right: 55px;
+}
+
+.dropdown {
+  padding-top: 22px;
+}
+
+.site-navigation {
+  padding-top: 4px;
+}
+.site-navigation-waranty {
+  margin-right: 108px;
+}
+
+.site-navigation-delivery {
+  margin-right: 35px; 
+}
+
+.user-navigation {
+  padding-right: 4px;
+  padding-top: 1px;
+}
+.user-navigation-basket {
+  padding-left: 65px;
+}
+
+.user-navigation-login {
+  margin-right: 238px;
+}
