@@ -26,6 +26,7 @@ html {
   box-sizing: border-box;
 }
 
+
 .content-box-compontent {
   box-sizing: content-box;
 }
@@ -54,6 +55,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .header {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 40px, rgba(240, 197, 46, 0.5) 40px, rgba(240, 197, 46, 0.5) 226px);
 }
@@ -183,10 +188,12 @@ a {
 
 .slider-title {
   color: #000000;
-  font-family: "Gilroy", Arial, sans-serif;;
+  font-family: "Gilroy", Arial, sans-serif;
+  ;
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
+  letter-spacing: 0.17px;
 }
 
 .slider-title-number {
@@ -614,7 +621,6 @@ button.button {
   padding-left: 90px;
   padding-top: 2px;
   min-height: 594px;
-  justify-content: space-between;
   background-image: linear-gradient(180deg, rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5) 113px, rgba(255, 255, 255, 1) 113px, rgba(255, 255, 255, 1) 594px);
 }
 
@@ -692,11 +698,11 @@ footer {
   margin: 0 auto;
   width: 1200px;
   padding: 0 20px;
-  
+
 }
 
 .main-middle-wrapper {
-background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
+  background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
 }
 
 .filter {
@@ -766,18 +772,20 @@ header {
 .site-navigation {
   padding-top: 4px;
 }
+
 .site-navigation-waranty {
   margin-right: 108px;
 }
 
 .site-navigation-delivery {
-  margin-right: 35px; 
+  margin-right: 35px;
 }
 
-.user-navigation-compare{
+.user-navigation-compare {
   position: relative;
   padding-left: 20px;
 }
+
 .user-navigation-compare::before {
   content: "";
   position: absolute;
@@ -787,13 +795,15 @@ header {
   height: 17px;
   background-image: url("../img/compare.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;}
+  background-position: 0 0;
+}
 
 
 .user-navigation {
   padding-right: 4px;
   padding-top: 1px;
 }
+
 .user-navigation-basket {
   margin-left: 50px;
   padding-left: 15px;
@@ -810,7 +820,8 @@ header {
   height: 12px;
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;}
+  background-position: 0 0;
+}
 
 .user-navigation-login {
   margin-right: 218px;
@@ -827,7 +838,8 @@ header {
   height: 12px;
   background-image: url("../img/user.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;}
+  background-position: 0 0;
+}
 
 .search-form {
   position: relative;
@@ -847,24 +859,24 @@ header {
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 12px;
+  height: 12px;
   margin-right: 8px;
-
+  margin-left: 13px;
   vertical-align: top;
 
   background-color: transparent;
-  border: 2px solid red;
+  border: 1px solid rgb(5, 5, 5);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls {
-position: absolute;
-bottom: 203px;
-left: 383px;
-z-index: 20;
-font-size: 0;
+  position: absolute;
+  bottom: 235px;
+  right: 95px;
+  z-index: 20;
+  font-size: 0;
 }
 
 
@@ -876,11 +888,12 @@ font-size: 0;
   display: flex;
 }
 
-.features-table tr{
+.features-table tr {
   display: flex;
   flex-direction: column;
 }
-.features-table tbody{
+
+.features-table tbody {
   display: flex;
 }
 
@@ -888,19 +901,49 @@ font-size: 0;
   position: relative;
 }
 
-#first-slide:checked~.first-label:before {
+.first-label {
+  position: relative;
+}
+
+#first-slide:checked~.slider-controls label:first-child:before,
+#second-slide:checked~.slider-controls label:nth-child(2):before,
+#third-slide:checked~.slider-controls label:nth-child(3):before
+ {
   content: "";
 
   position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
-
-  width: 4px;
-  height: 4px;
-  margin: -4px;
-
-  background-color: inherit;
-  border: 2px solid greenyellow;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  margin-top: 2px;
+  margin-left: 2px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 1px solid rgb(5, 5, 5);
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-title-number {
+  position: absolute;
+  right: 49px;
+  top: -10px;
+  z-index: 5;
+}
+
+.item-info {
+  padding-left: 125px;
+  padding-top: 31px;
+}
+
+.slider-description {
+  max-width: 480px;
+  margin-top: 20px;
+  min-height: 90px;
+}
+
+.slider-title {
+  margin-bottom: 0px;;
+  z-index: 21;
 }
