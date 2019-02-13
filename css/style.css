@@ -888,7 +888,7 @@ font-size: 0;
   position: relative;
 }
 
-/* #first-slide:checked~.first-label:before {
+#first-slide:checked~.first-label:before {
   content: "";
 
   position: absolute;
@@ -901,6 +901,6 @@ font-size: 0;
   margin: -4px;
 
   background-color: inherit;
-  border: 2px solid #c1c1c1;
+  border: 2px solid greenyellow;
   border-radius: 50%;
-} */
+}
