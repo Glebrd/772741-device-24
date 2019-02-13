@@ -941,8 +941,9 @@ header {
 }
 
 .item-info {
-  padding-left: 125px;
+  /* padding-left: 125px; */
   padding-top: 31px;
+  width: 561px;
 }
 
 .slider-description {
@@ -955,4 +956,18 @@ header {
   margin-bottom: 0px;
   position: relative;
   z-index: 21;
+}
+
+.second-slide img {
+  margin-top: 12px;
+  margin-left: 28px;
+}
+
+.third-slide img {
+  margin-top: 65px;
+  margin-left: -58px;
+}
+
+.slide {
+  justify-content: space-between;
 }
