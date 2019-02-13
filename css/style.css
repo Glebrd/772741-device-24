@@ -218,13 +218,15 @@ img {
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  padding-top: 8px;
+  padding-top: 6px;
+  padding-right: 7px;
   width: 220px;
   border: none;
-  background-image: linear-gradient(180deg, #ffffff, #ffffff 44.3%, #f0c52e 33.3%, #f0c52e 56.6%, #ffffff 56.6%, #ffffff 100%);
-  display: block;
+  background-image: linear-gradient(180deg, #ffffff, #ffffff 14px, #f0c52e 14px, #f0c52e 21px, #ffffff 22px, #ffffff 40px);
   text-align: center;
   height: 40px;
+  letter-spacing: 2.15px;
+  display: inline-block;
 }
 
 .button:hover {
@@ -888,13 +890,19 @@ header {
   display: flex;
 }
 
+.features-table th {
+  padding-top: 7px;
+}
+
 .features-table tr {
   display: flex;
   flex-direction: column;
+  margin-right: 71px;
 }
 
 .features-table tbody {
   display: flex;
+  padding-top: 45px;
 }
 
 .slider-container {
@@ -944,6 +952,7 @@ header {
 }
 
 .slider-title {
-  margin-bottom: 0px;;
+  margin-bottom: 0px;
+  position: relative;
   z-index: 21;
 }
