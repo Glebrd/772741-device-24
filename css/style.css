@@ -1028,8 +1028,7 @@ li.third-slide {
   .dropdown-list:hover {
     position: absolute;
     right: 0px;
-    background-color: red;
-    /* background-color: #f7e184; */
+    background-color: #f7e184;
     display: flex;
     top: 45px;
     width: 1160px;
@@ -1042,4 +1041,5 @@ li.third-slide {
 
   .dropdown-sublist {
     list-style: none;
+    padding-right: 19px;
   }
