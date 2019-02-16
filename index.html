@@ -28,7 +28,7 @@
         </div>
         <div class="header-bottom">
           <a href="catalog.html" class="dropdown">Каталог товаров</a>
-<div class="dropdown-list">
+          <div class="dropdown-list">
             <ul class="dropdown-sublist">
               <li><a class="dropdown-list-item" href="#">Виртуальная реальность</a></li>
               <li><a class="dropdown-list-item" href="catalog.html">Моноподы для селфи</a></li>
@@ -41,7 +41,7 @@
             <ul class="dropdown-sublist">
               <li><a class="dropdown-list-item" href="#">Квадрокоптеры</a></li>
             </ul>
-</div>
+          </div>
           <ul class="site-navigation">
             <li><a class="site-navigation-item site-navigation-delivery" href="#">Доставка</a></li>
             <li><a class="site-navigation-waranty site-navigation-item" href="#">Гарантия</a></li>
@@ -169,39 +169,40 @@
 
     <section class="services">
       <div class="container">
-        <input class="visually-hidden" type="text">
-        <input class="visually-hidden" type="text">
-        <input class="visually-hidden" type="text">
-        <ul class="services-list">
-          <li class="services-list-item"><label></label></li>
-          <li class="services-list-item"><label></label></li>
-          <li class="services-list-item"><label></label></li>
-        </ul>
-        <ul class="services-slider">
-          <li class="services-first-slide">
-            <h3 class="service-name">Доставка</h3>
-            <p class="service-description">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем,
-              поднимая его на ваш этаж.
-            </p>
-          </li>
-          <li class="services-second-slide">
-            <h3 class="service-name">Гарантия</h3>
-            <p class="service-description">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </li>
-          <li class="services-third-slide">
-            <h3 class="service-name">Кредит</h3>
-            <p class="service-description">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-              условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </li>
-        </ul>
-
+        <input class="visually-hidden" type="radio" id="middle-slider-first-slide" name="middle-slider-toggle" checked>
+        <input class="visually-hidden" type="radio" id="middle-slider-second-slide" name="middle-slider-toggle">
+        <input class="visually-hidden" type="radio" id="middle-slider-third-slide" name="middle-slider-toggle">
+        <div class="middle-slider-wrapper">
+          <div class="middle-slider-slider-controls">
+            <label for="middle-slider-first-slide" class="button">Доставка</label>
+            <label for="middle-slider-second-slide" class="button">Гарантия</label>
+            <label for="middle-slider-third-slide" class="button">Кредит</label>
+          </div>
+          <ul class="services-slider">
+            <li class="services-first-slide" id="middle-slider-slide1">
+              <h3 class="service-name">Доставка</h3>
+              <p class="service-description">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем,
+                поднимая его на ваш этаж.
+              </p>
+            </li>
+            <li class="services-second-slide" id="middle-slider-slide2">
+              <h3 class="service-name">Гарантия</h3>
+              <p class="service-description">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </li>
+            <li class="services-third-slide" id="middle-slider-slide3">
+              <h3 class="service-name">Кредит</h3>
+              <p class="service-description">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
