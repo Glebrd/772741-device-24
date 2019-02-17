@@ -69,11 +69,13 @@ img {
   border: 1px solid transparent;
 }
 
-.logo:hover {
+.logo:hover,
+.footer-logo:hover {
   opacity: 0.6;
 }
 
-.logo:active {
+.logo:active,
+.footer-logo:active {
   opacity: 0.3;
 }
 
