@@ -19,9 +19,10 @@
             <input class="search-input" name="search" placeholder="поиск по сайту" type="search">
             <button type="submit" class="button-search">Найти</button>
           </form>
-          <ul class="user-navigation">
-            <li><a class="user-navigation-username user-navigation-item" href="#">Валентин Петухов</a></li>
-            <li><a class="user-navigation-login user-navigation-item" href="#">Войти</a></li>
+          <ul class="user-navigation user-navigation-logged-in">
+            <li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
+            <li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
+<li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
             <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
             <li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
           </ul>
@@ -113,8 +114,10 @@
                 <span class="goods-item-price">500 руб.</span>
                 <p class="goods-item-image">
                   <img src="img/product1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <button class="button put-in-basket">В корзину</button>
-                  <button class="compare">Добавить к сравнению</button>
+                  <div class="goods-pop-up">
+                    <button class="button put-in-basket">В корзину</button>
+                    <button class="compare">Добавить к сравнению</button>
+                  </div>
                 </p>
               </li>
               <li class="goods-item">
@@ -123,8 +126,10 @@
                   500 руб.</span>
                 <p class="goods-item-image">
                   <img src="img/product2.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <button class="button put-in-basket">В корзину</button>
-                  <button class="compare">Добавить к сравнению</button>
+                  <div class="goods-pop-up">
+                    <button class="button put-in-basket">В корзину</button>
+                    <button class="compare">Добавить к сравнению</button>
+                  </div>
                 </p>
               </li>
               <li class="goods-item">
@@ -134,8 +139,10 @@
                 <span class="goods-item-price">2 500 руб.</span>
                 <p class="goods-item-image">
                   <img src="img/product3.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <button class="button put-in-basket">В корзину</button>
-                  <button class="compare">Добавить к сравнению</button>
+                  <div class="goods-pop-up">
+                    <button class="button put-in-basket">В корзину</button>
+                    <button class="compare">Добавить к сравнению</button>
+                  </div>
                 </p>
               </li>
               <li class="goods-item">
@@ -145,33 +152,36 @@
                 <span class="goods-item-price">4 900 руб.</span>
                 <p class="goods-item-image">
                   <img src="img/product4.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="goods-pop-up">
                   <button class="button put-in-basket">В корзину</button>
                   <button class="compare">Добавить к сравнению</button>
-                </p>
-              </li>
-          </section>
-          <div class="page-navigation">
-            <a href="#" class="prev">Назад</a>
-            <ul class="page-numbers">
-              <li class="page-number page-number-current"><a>1</a></li>
-              <li class="page-number"><a href="#">2</a></li>
-              <li class="page-number"><a href="#">3</a></li>
-            </ul>
-            <a href="#" class="next">Вперед</a>
-          </div>
+        </div>
+        </p>
+        </li>
+        </section>
+        <div class="page-navigation">
+          <a href="#" class="prev">Назад</a>
+          <ul class="page-numbers">
+            <li class="page-number page-number-current"><a>1</a></li>
+            <li class="page-number"><a href="#">2</a></li>
+            <li class="page-number"><a href="#">3</a></li>
+          </ul>
+          <a href="#" class="next">Вперед</a>
         </div>
       </div>
+    </div>
     </div>
   </main>
   <footer>
     <div class="container">
       <div class="footer-top">
         <a href="index.html"><img class="logo" src="img/logo-orange.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
-        <ul class="footer-user-navigation">
-          <li><a class="user-navigation-username user-navigation-item">Валентин Петухов</a></li>
-          <li><a class="user-navigation-login user-navigation-item">Войти</a></li>
-          <li><a class="user-navigation-compare user-navigation-item">Сравнить</a></li>
-          <li><a class="user-navigation-basket user-navigation-item">Корзина</a></li>
+        <ul class="footer-user-navigation user-navigation-logged-in">
+<li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
+<li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
+<li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
+<li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
+<li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-middle">
