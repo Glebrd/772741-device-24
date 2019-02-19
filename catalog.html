@@ -22,24 +22,30 @@
           <ul class="user-navigation user-navigation-logged-in">
             <li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
             <li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
-<li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
+            <li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
             <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
             <li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
           </ul>
         </div>
         <div class="header-bottom">
           <a href="catalog.html" class="dropdown">Каталог товаров</a>
-          <ul class="dropdown-list">
-            <li><a class="dropdown-list-item" href="#">Виртуальная реальность</a></li>
-            <li><a class="dropdown-list-item" href="#">Моноподы для селфи</a></li>
-            <li><a class="dropdown-list-item" href="#">Экшн-камеры</a></li>
-            <li><a class="dropdown-list-item" href="#">Фитнес-браслеты</a></li>
-            <li><a class="dropdown-list-item" href="#">Умные часы</a></li>
-            <li><a class="dropdown-list-item" href="#">Квадрокоптеры</a></li>
-          </ul>
+          <div class="dropdown-list">
+            <ul class="dropdown-sublist">
+              <li><a class="dropdown-list-item" href="#">Виртуальная реальность</a></li>
+              <li><a class="dropdown-list-item" href="catalog.html">Моноподы для селфи</a></li>
+              <li><a class="dropdown-list-item" href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="dropdown-sublist">
+              <li><a class="dropdown-list-item" href="#">Фитнес-браслеты</a></li>
+              <li><a class="dropdown-list-item" href="#">Умные часы</a></li>
+            </ul>
+            <ul class="dropdown-sublist">
+              <li><a class="dropdown-list-item" href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
           <ul class="site-navigation">
-            <li><a class="site-navigation-item" href="#">Доставка</a></li>
-            <li><a class="site-navigation-item" href="#">Гарантия</a></li>
+            <li><a class="site-navigation-delivery site-navigation-item" href="#">Доставка</a></li>
+            <li><a class="site-navigation-waranty site-navigation-item" href="#">Гарантия</a></li>
             <li><a class="site-navigation-contacts site-navigation-item" href="#">Контакты</a></li>
           </ul>
         </div>
@@ -53,8 +59,24 @@
       <ul class="breadcrumbs">
         <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
         <li><a class="breadcrumbs-item" href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-item"><a href="#"></a>Моноподы для селфи</a></li>
+        <li><a class="breadcrumbs-item">Моноподы для селфи</a></li>
       </ul>
+    </div>
+    <div class="main-controls-wrapper">
+<div class="main-controls container">
+<h2 class="filter-header">Фильтр:</h2>
+<section class="sort">
+  <h2 class="sort-header">Сортировка</h2>
+  <ul class="sort-list">
+    <li class="sort-item sort-item-current"><a href="#">По цене</a></li>
+    <li class="sort-item"><a href="#">По типу</a></li>
+    <li class="sort-item"><a href="#">По популярности</a></li>
+    <li class="sort-option"><a href="#" aria-label="По возрастанию"></a></li>
+    <li class="sort-option sort-option-current"><a href="#" aria-label="По убыванию"></a></li>
+  </ul>
+</section>
+
+      </div>
     </div>
     <div class="main-middle-wrapper">
       <div class="main-middle-container">
@@ -66,14 +88,14 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <!-- Убрать стиль в CSS <div class="bar" style="margin-left: 20%; width: 30%"></div> -->
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
                 </div>
               </div>
             </fieldset>
@@ -153,23 +175,23 @@
                 <p class="goods-item-image">
                   <img src="img/product4.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods-pop-up">
-                  <button class="button put-in-basket">В корзину</button>
-                  <button class="compare">Добавить к сравнению</button>
-        </div>
-        </p>
-        </li>
-        </section>
-        <div class="page-navigation">
-          <a href="#" class="prev">Назад</a>
-          <ul class="page-numbers">
-            <li class="page-number page-number-current"><a>1</a></li>
-            <li class="page-number"><a href="#">2</a></li>
-            <li class="page-number"><a href="#">3</a></li>
-          </ul>
-          <a href="#" class="next">Вперед</a>
+                    <button class="button put-in-basket">В корзину</button>
+                    <button class="compare">Добавить к сравнению</button>
+                  </div>
+                </p>
+              </li>
+          </section>
+          <div class="page-navigation">
+            <a href="#" class="prev">Назад</a>
+            <ul class="page-numbers">
+              <li class="page-number page-number-current"><a>1</a></li>
+              <li class="page-number"><a href="#">2</a></li>
+              <li class="page-number"><a href="#">3</a></li>
+            </ul>
+            <a href="#" class="next">Вперед</a>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </main>
   <footer>
@@ -177,11 +199,11 @@
       <div class="footer-top">
         <a href="index.html"><img class="footer-logo" src="img/logo-orange.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
         <ul class="footer-user-navigation user-navigation-logged-in">
-<li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
-<li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
-<li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
-<li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
-<li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
+          <li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
+          <li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
+          <li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
+          <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
+          <li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-middle">
