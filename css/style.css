@@ -364,7 +364,8 @@ a.user-navigation-username {
   font-style: normal
 }
 
-.footer-address, {
+.footer-address,
+  {
   min-width: 200px;
 }
 
@@ -488,7 +489,7 @@ button.button {
 }
 
 .sort-list li {
-margin-right: 31px;
+  margin-right: 31px;
 }
 
 .sort-item {
@@ -634,6 +635,7 @@ margin-right: 31px;
 .footer-user-navigation {
   flex-wrap: wrap;
 }
+
 .footer-user-navigation.user-navigation-logged-out>li:nth-child(n+4) {
   margin-left: 20px;
 }
@@ -756,17 +758,18 @@ footer {
   padding: 0 20px;
 
 }
+
 .main-controls-wrapper {
   background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 50%, #ebebeb 50%, #ebebeb);
-  }
+}
 
 .main-middle-wrapper {
   background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
-    /* background: 0 0/50% 100% linear-gradient(180deg, #dcdcdc 5%, transparent 5%); */
-    /* 0 0/50% 100% linear-gradient(90deg, #efefef 50%, #efefef 50%); */
+  /* background: 0 0/50% 100% linear-gradient(180deg, #dcdcdc 5%, transparent 5%); */
+  /* 0 0/50% 100% linear-gradient(90deg, #efefef 50%, #efefef 50%); */
 
-      /* background-position: left bottom; */
-      /* background-repeat: no-repeat;
+  /* background-position: left bottom; */
+  /* background-repeat: no-repeat;
 } 
 */
 }
@@ -785,7 +788,7 @@ footer {
   display: flex;
   width: 830px;
   background-color: #ebebeb;
-  padding-left:73px;
+  padding-left: 73px;
   padding-top: 9px;
 }
 
@@ -890,6 +893,7 @@ header {
 .user-navigation-logged-in {
   padding-top: 0px;
 }
+
 .user-navigation-compare {
   position: relative;
   padding-left: 20px;
@@ -945,8 +949,7 @@ a.user-navigation-username {
 }
 
 .user-navigation-login::before,
-.user-navigation-username::before
-{
+.user-navigation-username::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -1135,7 +1138,7 @@ li.third-slide {
   background-color: #b9a975;
 }
 
-.site-navigation>li:nth-child(n+4)>a{
+.site-navigation>li:nth-child(n+4)>a {
   margin-left: 20px;
 }
 
@@ -1500,15 +1503,18 @@ li.services-third-slide::before {
   margin-top: 13px;
   margin-left: auto;
 }
+
 .footer-user-navigation.user-navigation-logged-out li:first-child {
   margin-top: 4px;
   min-width: 107px;
 }
+
 .footer-user-navigation.user-navigation-logged-in li:first-child {
   margin-top: 4px;
   min-width: 149px;
 }
-.footer-user-navigation.user-navigation-logged-in li:nth-child(4)>a{
+
+.footer-user-navigation.user-navigation-logged-in li:nth-child(4)>a {
   margin-top: 0px;
   margin-left: 44px;
 }
@@ -1516,9 +1522,9 @@ li.services-third-slide::before {
 .footer-user-navigation.user-navigation-logged-in .user-navigation-logout {
   padding-left: 20px;
 }
+
 .footer-top .user-navigation-login::before,
-.footer-top .user-navigation-username::before
-{
+.footer-top .user-navigation-username::before {
   background-image: url("../img/user-orange.svg");
 }
 
@@ -1576,8 +1582,8 @@ ul.footer-site-navigation {
   margin-left: 454px;
   margin-top: 45px;
   padding: 0;
-max-width: 190px;
-flex-wrap: wrap;
+  max-width: 190px;
+  flex-wrap: wrap;
 }
 
 .social li {
@@ -1646,14 +1652,16 @@ a.social-button {
 .goods-item {
   position: relative;
 }
+
 .goods-pop-up {
   position: absolute;
-top: 270px;
+  top: 270px;
 }
 
 .breadcrumbs {
   margin-left: 20px;
 }
+
 .category-title {
   margin-top: 37px;
   margin-left: 59px;
@@ -1675,14 +1683,14 @@ top: 270px;
 .breadcrumbs>li:not(:last-of-type)::before,
 .breadcrumbs>li:not(:last-of-type)::after {
 
-    position: absolute;
-    right: -19px;
-    top: 17px;
-    width: 4px;
-    height: 1.3px;
-    margin-bottom: -3px;
-    content: '';
-    background-color: #000;
+  position: absolute;
+  right: -19px;
+  top: 17px;
+  width: 4px;
+  height: 1.3px;
+  margin-bottom: -3px;
+  content: '';
+  background-color: #000;
 }
 
 .breadcrumbs>li:not(:last-of-type)::after {
@@ -1692,17 +1700,18 @@ top: 270px;
 
 .breadcrumbs>li:not(:last-of-type)::before {
   transform: translateY(3px) rotate(-45deg);
- width: 5px;
- top: 14px;
- right: -20px;
+  width: 5px;
+  top: 14px;
+  right: -20px;
 }
 
-.breadcrumbs>li:not(:first-child)::before{
-right: -25px;
+.breadcrumbs>li:not(:first-child)::before {
+  right: -25px;
 }
+
 .breadcrumbs>li:not(:first-child)::after {
 
-right: -24px;
+  right: -24px;
 
 }
 
@@ -1823,11 +1832,59 @@ right: -24px;
 }
 
 .filter-header {
-width:328px;
-padding-left: 61px;
-padding-top: 9px;
+  width: 328px;
+  padding-left: 61px;
+  padding-top: 9px;
 }
 
 .sort-header {
   padding-right: 45px;
+}
+
+/* Стили чекбоксов */
+.checkbox-color {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.checkbox-color:hover,
+.checkbox-color:focus {
+  color: #663d15;
+}
+
+.checkbox-color {
+  position: relative;
+}
+
+.checkbox-color input[type="checkbox"]:focus {
+  border-color: #663d15;
+  outline: thin dotted;
+  /* outline: 5px auto; */
+}
+
+input[type="checkbox"]:checked+.checkbox-color::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input[type="checkbox"]+.checkbox-color::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }

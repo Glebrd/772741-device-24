@@ -63,18 +63,18 @@
       </ul>
     </div>
     <div class="main-controls-wrapper">
-<div class="main-controls container">
-<h2 class="filter-header">Фильтр:</h2>
-<section class="sort">
-  <h2 class="sort-header">Сортировка</h2>
-  <ul class="sort-list">
-    <li class="sort-item sort-item-current"><a href="#">По цене</a></li>
-    <li class="sort-item"><a href="#">По типу</a></li>
-    <li class="sort-item"><a href="#">По популярности</a></li>
-    <li class="sort-option"><a href="#" aria-label="По возрастанию"></a></li>
-    <li class="sort-option sort-option-current"><a href="#" aria-label="По убыванию"></a></li>
-  </ul>
-</section>
+      <div class="main-controls container">
+        <h2 class="filter-header">Фильтр:</h2>
+        <section class="sort">
+          <h2 class="sort-header">Сортировка</h2>
+          <ul class="sort-list">
+            <li class="sort-item sort-item-current"><a href="#">По цене</a></li>
+            <li class="sort-item"><a href="#">По типу</a></li>
+            <li class="sort-item"><a href="#">По популярности</a></li>
+            <li class="sort-option"><a href="#" aria-label="По возрастанию"></a></li>
+            <li class="sort-option sort-option-current"><a href="#" aria-label="По убыванию"></a></li>
+          </ul>
+        </section>
 
       </div>
     </div>
@@ -104,12 +104,12 @@
               <label><input type="checkbox" name="white">Белый</label>
               <label><input type="checkbox" name="blue" checked>Синий</label>
               <label><input type="checkbox" name="red" checked>Красный</label>
-              <label><input type="checkbox" name="pink">Розовый</label>
+<input class="visually-hidden" type="checkbox" name="pink" id="pink"><label class="checkbox-color" for="pink">Розовый</label>
             </fieldset>
             <fieldset class="bluetooth">
               <legend class="filter-title">Bluetooth</legend>
-              <label><input name="bluetooth-yes" type="radio" checked>Есть</label>
-              <label><input name="bluetooth-no" type="radio">Нет</label>
+              <label><input name="bluetooth" type="radio" checked>Есть</label>
+              <label><input name="bluetooth" type="radio">Нет</label>
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
           </form>
