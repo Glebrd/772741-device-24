@@ -487,6 +487,10 @@ button.button {
   list-style: none;
 }
 
+.sort-list li {
+margin-right: 31px;
+}
+
 .sort-item {
   font-size: 14px;
   font-weight: 400;
@@ -753,7 +757,8 @@ footer {
 
 }
 .main-controls-wrapper {
-  background-image: linear-gradient(to right, green, green 50%, #fff 50%, #fff);}
+  background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 50%, #ebebeb 50%, #ebebeb);
+  }
 
 .main-middle-wrapper {
   background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
@@ -768,6 +773,7 @@ footer {
 
 .main-controls {
   display: flex;
+  min-height: 70px;
 }
 
 .filter {
@@ -777,14 +783,17 @@ footer {
 
 .sort {
   display: flex;
-  max-width: 468px;
+  width: 830px;
+  background-color: #ebebeb;
+  padding-left:73px;
+  padding-top: 9px;
 }
 
 .main-right {
   max-width: 800px;
   padding-left: 73px;
   background-color: #ffffff;
-  min-height: 1287px;
+  min-height: 1217px;
 }
 
 .color,
@@ -1811,4 +1820,14 @@ right: -24px;
 
 .filter-form fieldset {
   border: 0;
+}
+
+.filter-header {
+width:328px;
+padding-left: 61px;
+padding-top: 9px;
+}
+
+.sort-header {
+  padding-right: 45px;
 }
