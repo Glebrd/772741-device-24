@@ -1728,13 +1728,13 @@ a.social-button {
   border: none;
 
   /* Для демонстрации */
-  width: 260px;
-  margin: 50px auto;
+  /* width: 260px;
+  margin: 50px auto; */
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 20px;
   box-sizing: content-box;
 }
 
@@ -1748,9 +1748,9 @@ a.social-button {
 .range-controls {
   position: relative;
 
-  height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  height: 7px;
+  margin-bottom: 0px;
+  padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -1774,7 +1774,7 @@ a.social-button {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 0px;
   left: 0;
 
   width: 4px;
@@ -1802,30 +1802,30 @@ a.social-button {
 
 .price-controls label {
   display: inline-block;
-  width: 50%;
-
-  font-size: 16px;
-  text-transform: uppercase;
+  min-width: 91px;
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 300;
+  color: #cfcfcf;
 }
 
+
+
 .price-controls input {
-  width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
-
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: #283136;
-
+  width: 50px;
+  padding: 0px 0px;
+  text-align: left;
+  color: #cfcfcf;
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
+  font-family: "Gilroy";
+  font-weight: 300;
 }
 
-.max-price {
+/* .max-price {
   text-align: right;
-}
+} */
 
 .filter-form fieldset {
   border: 0;
@@ -1859,10 +1859,9 @@ a.social-button {
   position: relative;
 }
 
-.checkbox-color input[type="checkbox"]:focus {
-  border-color: #663d15;
+ input[type="checkbox"]:focus+.checkbox-color::before {
   outline: thin dotted;
-  /* outline: 5px auto; */
+  outline: 5px auto; 
 }
 
 input[type="checkbox"]:checked+.checkbox-color::before {
@@ -1887,4 +1886,37 @@ input[type="checkbox"]+.checkbox-color::before {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-form legend{
+  font-family: "Gilroy"; 
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  position: relative;
+}
+
+.filter-title {
+position: relative;
+} 
+
+.price-filter {
+  margin-top: 81px;
+  margin-left: 48px;
+  height: 140px;
+}
+
+.color {
+  margin-left: 48px;
+  height: 140px;
+}
+
+.filter-form legend::before {
+  content: "";
+  height: 2px;
+  width: 201px;
+  position: absolute;
+  background-color: black;
+  top: -12px;
 }

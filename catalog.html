@@ -82,8 +82,8 @@
       <div class="main-middle-container">
         <section class="filter">
           <form action="https://echo.htmlacademy.ru" class="filter-form">
-            <fieldset class="filter-title">
-              <legend>Стоимость</legend>
+            <fieldset class="price-filter">
+              <legend class="filter-title">Стоимость</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -94,16 +94,16 @@
                 </div>
                 <div class="price-controls">
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                 </div>
               </div>
             </fieldset>
             <fieldset class="color">
               <legend class="filter-title">Цвет</legend>
-              <label><input type="checkbox" name="black" checked>Черный</label>
-              <label><input type="checkbox" name="white">Белый</label>
-              <label><input type="checkbox" name="blue" checked>Синий</label>
-              <label><input type="checkbox" name="red" checked>Красный</label>
+<input class="visually-hidden" type="checkbox" name="black" id="black" checked><label class="checkbox-color" for="black">Черный</label>
+<input class="visually-hidden" type="checkbox" name="white" id="white"><label class="checkbox-color" for="whitek">Белый</label>
+<input class="visually-hidden" type="checkbox" name="blue" id="blue" checked><label class="checkbox-color" for="blue">Синий</label>
+<input class="visually-hidden" type="checkbox" name="red" id="red" checked><label class="checkbox-color" for="red">Красный</label>
 <input class="visually-hidden" type="checkbox" name="pink" id="pink"><label class="checkbox-color" for="pink">Розовый</label>
             </fieldset>
             <fieldset class="bluetooth">
