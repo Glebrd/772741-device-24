@@ -1859,9 +1859,10 @@ a.social-button {
   position: relative;
 }
 
-input[type="checkbox"]:focus+.checkbox-color::before {
-  outline: thin dotted;
-  outline: 5px auto;
+input[type="checkbox"]:focus+.checkbox-color::before,
+input[type="radio"]:focus+.checkbox-bluetooth::before {
+  outline-width: 1px;
+  outline-style: dotted;
 }
 
 input[type="checkbox"]:checked+.checkbox-color::before {
@@ -1976,4 +1977,15 @@ cursor: pointer;
   width: 200px;
   padding-left: 1px;
   padding-top: 7px;
+}
+
+/* Стили товаров */
+.goods-item-image {
+  position: relative;
+}
+
+.goods-pop-up {
+  position: absolute;
+  bottom: 800px;
+  left: 60px;
 }
