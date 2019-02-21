@@ -87,7 +87,7 @@
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    <div class="bar"></div>
                   </div>
                   <div class="toggle toggle-min"></div>
                   <div class="toggle toggle-max"></div>
@@ -100,16 +100,20 @@
             </fieldset>
             <fieldset class="color">
               <legend class="filter-title">Цвет</legend>
-<input class="visually-hidden" type="checkbox" name="black" id="black" checked><label class="checkbox-color" for="black">Черный</label>
-<input class="visually-hidden" type="checkbox" name="white" id="white"><label class="checkbox-color" for="whitek">Белый</label>
-<input class="visually-hidden" type="checkbox" name="blue" id="blue" checked><label class="checkbox-color" for="blue">Синий</label>
-<input class="visually-hidden" type="checkbox" name="red" id="red" checked><label class="checkbox-color" for="red">Красный</label>
-<input class="visually-hidden" type="checkbox" name="pink" id="pink"><label class="checkbox-color" for="pink">Розовый</label>
+              <input class="visually-hidden" type="checkbox" name="black" id="black" checked><label class="checkbox-color"
+                for="black">Черный</label>
+              <input class="visually-hidden" type="checkbox" name="white" id="white"><label class="checkbox-color" for="white">Белый</label>
+              <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked><label class="checkbox-color"
+                for="blue">Синий</label>
+              <input class="visually-hidden" type="checkbox" name="red" id="red" checked><label class="checkbox-color"
+                for="red">Красный</label>
+              <input class="visually-hidden" type="checkbox" name="pink" id="pink"><label class="checkbox-color" for="pink">Розовый</label>
             </fieldset>
             <fieldset class="bluetooth">
               <legend class="filter-title">Bluetooth</legend>
-              <label><input name="bluetooth" type="radio" checked>Есть</label>
-              <label><input name="bluetooth" type="radio">Нет</label>
+<input class="visually-hidden" name="bluetooth" id="bluetooth-yes" type="radio" checked><label class="checkbox-bluetooth"
+  for="bluetooth-yes">Есть</label>
+<input class="visually-hidden" name="bluetooth" id="bluetooth-no" type="radio"><label class="checkbox-bluetooth" for="bluetooth-no">Нет</label>
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
           </form>

@@ -429,7 +429,7 @@ a.user-navigation-username {
 }
 
 button.button {
-  background-image: linear-gradient(180deg, #ffffff, #ffffff 54.3%, #f0c52e 54.3%, #f0c52e 67.6%, #ffffff 67.6%, #ffffff 100%);
+  background-image: linear-gradient(180deg, transparent, transparent 19px, #f0c52e 20px, #f0c52e 27px, transparent 27px, transparent 40px);
 }
 
 .category-title {
@@ -1749,10 +1749,10 @@ a.social-button {
   position: relative;
 
   height: 7px;
+  margin-left: -5px;
   margin-bottom: 0px;
   padding-top: 10px;
   padding-right: 20px;
-  padding-left: 20px;
 
   background-color: #f1f1f1;
 
@@ -1766,10 +1766,10 @@ a.social-button {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 50%;
   height: 2px;
-
-  background: #00ca74;
+  margin-left: 0%;
+  background: #91c92f;
 }
 
 .range-controls .toggle {
@@ -1789,11 +1789,11 @@ a.social-button {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 0px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 113px;
 }
 
 .price-controls {
@@ -1859,9 +1859,9 @@ a.social-button {
   position: relative;
 }
 
- input[type="checkbox"]:focus+.checkbox-color::before {
+input[type="checkbox"]:focus+.checkbox-color::before {
   outline: thin dotted;
-  outline: 5px auto; 
+  outline: 5px auto;
 }
 
 input[type="checkbox"]:checked+.checkbox-color::before {
@@ -1888,8 +1888,8 @@ input[type="checkbox"]+.checkbox-color::before {
   background-position: 0 0;
 }
 
-.filter-form legend{
-  font-family: "Gilroy"; 
+.filter-form legend {
+  font-family: "Gilroy";
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1898,18 +1898,19 @@ input[type="checkbox"]+.checkbox-color::before {
 }
 
 .filter-title {
-position: relative;
-} 
+  position: relative;
+}
 
 .price-filter {
   margin-top: 81px;
   margin-left: 48px;
-  height: 140px;
+  min-height: 140px;
 }
 
 .color {
+  padding-top: 22px;
   margin-left: 48px;
-  height: 140px;
+  min-height: 285px;
 }
 
 .filter-form legend::before {
@@ -1919,4 +1920,60 @@ position: relative;
   position: absolute;
   background-color: black;
   top: -12px;
+}
+
+.checkbox-color {
+  margin-bottom: 10px;
+  padding-left: 39px;
+}
+
+.bluetooth {
+  padding-top: 22px;
+  margin-left: 48px;
+  min-height: 149px;
+}
+
+
+.checkbox-bluetooth {
+  position: relative;
+}
+
+input[type="radio"]+.checkbox-bluetooth::before {
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: -1px;
+  top: 2px;
+  content: '';
+}
+
+
+input[type="radio"]:checked+.checkbox-bluetooth::after {
+  position: absolute;
+  top: 14px;
+  left: -1px;
+  width: 9px;
+  height: 9px;
+  margin-top: -4px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background: #000;
+  content: '';
+}
+
+.checkbox-bluetooth {
+padding-left: 39px;
+margin-bottom: 11px;
+cursor: pointer;
+}
+
+.filter-button {
+  margin-left: 58px;
+  background-color: transparent;
+  width: 200px;
+  padding-left: 1px;
+  padding-top: 7px;
 }
