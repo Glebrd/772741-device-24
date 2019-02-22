@@ -111,9 +111,10 @@
             </fieldset>
             <fieldset class="bluetooth">
               <legend class="filter-title">Bluetooth</legend>
-<input class="visually-hidden" name="bluetooth" id="bluetooth-yes" type="radio" checked><label class="checkbox-bluetooth"
-  for="bluetooth-yes">Есть</label>
-<input class="visually-hidden" name="bluetooth" id="bluetooth-no" type="radio"><label class="checkbox-bluetooth" for="bluetooth-no">Нет</label>
+              <input class="visually-hidden" name="bluetooth" id="bluetooth-yes" type="radio" checked><label class="checkbox-bluetooth"
+                for="bluetooth-yes">Есть</label>
+              <input class="visually-hidden" name="bluetooth" id="bluetooth-no" type="radio"><label class="checkbox-bluetooth"
+                for="bluetooth-no">Нет</label>
             </fieldset>
             <button type="submit" class="filter-button button">Показать</button>
           </form>
@@ -123,10 +124,12 @@
             <h3 class="visually-hidden">Список товаров</h3>
             <ul class="goods-list">
               <li class="goods-item">
-                <h4>
-                  <a class="goods-item-name" href="#">Любительская селфи-палка</a>
-                </h4>
-                <span class="goods-item-price">500 руб.</span>
+                <div class="goods-info">
+                  <h4>
+                    <a class="goods-item-name" href="#">Любительская селфи-палка</a>
+                  </h4>
+                  <span class="goods-item-price">500 руб.</span>
+                </div>
                 <p class="goods-item-image">
                   <img src="img/product1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods-pop-up">
@@ -136,9 +139,11 @@
                 </p>
               </li>
               <li class="goods-item">
+                  <div class="goods-info">
                 <h4>
                   <a class="goods-item-name" href="#">Профессиональная селфи-палка</a> </h4> <span class="goods-item-price">1
                   500 руб.</span>
+                </div>
                 <p class="goods-item-image">
                   <img src="img/product2.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods-pop-up">
@@ -146,6 +151,7 @@
                     <button class="compare">Добавить к сравнению</button>
                   </div>
                 </p>
+              
               </li>
               <li class="goods-item">
                 <h4>

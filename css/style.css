@@ -430,6 +430,7 @@ a.user-navigation-username {
 
 button.button {
   background-image: linear-gradient(180deg, transparent, transparent 19px, #f0c52e 20px, #f0c52e 27px, transparent 27px, transparent 40px);
+background: transparent;
 }
 
 .category-title {
@@ -793,10 +794,11 @@ footer {
 }
 
 .main-right {
-  max-width: 800px;
-  padding-left: 73px;
+  min-width: 800px;
+  padding-left: 72px;
   background-color: #ffffff;
   min-height: 1217px;
+  padding-top: 39px;
 }
 
 .color,
@@ -1982,10 +1984,40 @@ cursor: pointer;
 /* Стили товаров */
 .goods-item-image {
   position: relative;
+  order: -1;
 }
 
 .goods-pop-up {
   position: absolute;
   bottom: 800px;
   left: 60px;
+}
+
+
+.goods-item:nth-child(1n) {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+
+.goods-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.goods-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.goods-info h4{
+  margin-top: 5px;
+/* margin-right: 50px; */
+margin-bottom: 0;
+max-width: 241px;
+}
+
+.goods-item-price {
+  padding-top: 8px;
 }
