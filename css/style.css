@@ -229,6 +229,7 @@ img {
   height: 40px;
   letter-spacing: 2.15px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .button:hover {
@@ -365,9 +366,8 @@ a.user-navigation-username {
   font-style: normal
 }
 
-.footer-address,
-  {
-  min-width: 200px;
+.footer-address {
+  min-width: 203px;
 }
 
 .footer-tel {
@@ -499,6 +499,41 @@ button.button {
   font-weight: 400;
 }
 
+.sort-order {
+  display: flex;
+  max-height: 10px;
+  margin-top: 20px;
+}
+
+.sort-up {
+  border-width: 0 5.5px 10px 5.5px;
+  border-color: transparent transparent #231f20 transparent;
+  border-style: solid;
+  display: block;
+  margin-right: 18px;
+  opacity: 0.2;
+}
+
+.sort-down {
+  border-width: 10px 5.5px 0 5.5px;
+  border-color: #231f20 transparent transparent transparent;
+  border-style: solid;
+  display: block;
+  opacity: 0.2;
+}
+
+.sort-up.active,
+.sort-down.active,
+.sort-up:active,
+.sort-down:active{
+  opacity: 1;
+}
+
+.sort-up:hover,
+.sort-down:hover {
+  opacity: 0.4;
+}
+
 .goods-list {
   list-style: none;
   margin: 0;
@@ -521,12 +556,11 @@ button.button {
   line-height: 24px;
 }
 
-.goods-item-image img:hover {
-  background-color: #eeeeee;
+.goods-item-image:hover {
   opacity: 0.7;
 }
 
-.goods-item-image>img:hover+.goods-pop-up {
+.goods-item-image:hover .goods-pop-up {
   display: block;
 }
 
@@ -827,6 +861,8 @@ footer {
 
 .sort-list {
   display: flex;
+  margin-top: 8px;
+  flex-grow: 1;
 }
 
 li.first-slide {
@@ -993,6 +1029,7 @@ a.user-navigation-username {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 12px;
   height: 12px;
   margin-right: 8px;
@@ -1052,6 +1089,7 @@ a.user-navigation-username {
 
   position: absolute;
   display: inline-block;
+  vertical-align: top;
   width: 6px;
   height: 6px;
   margin-right: 8px;
@@ -1465,6 +1503,7 @@ li.services-third-slide::before {
   content: "";
   position: absolute;
   display: inline-block;
+  vertical-align: top;
   width: 8px;
   height: 8px;
   background-color: transparent;
@@ -1733,12 +1772,8 @@ a.social-button {
 .filter-item {
   margin: 0;
   padding: 0;
-
   border: none;
 
-  /* Для демонстрации */
-  /* width: 260px;
-  margin: 50px auto; */
 }
 
 .range-filter {
@@ -1756,21 +1791,17 @@ a.social-button {
 
 .range-controls {
   position: relative;
-
   height: 7px;
   margin-left: -5px;
   margin-bottom: 0px;
   padding-top: 10px;
   padding-right: 20px;
-
   background-color: #f1f1f1;
-
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
@@ -1785,11 +1816,9 @@ a.social-button {
   position: absolute;
   top: 0px;
   left: 0;
-
   width: 4px;
   height: 4px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1811,6 +1840,7 @@ a.social-button {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   min-width: 91px;
   font-size: 14px;
   font-family: "Gilroy";
@@ -1851,17 +1881,13 @@ a.social-button {
 }
 
 /* Стили чекбоксов */
+
 .checkbox-color {
   position: relative;
 
   padding-left: 30px;
 
   cursor: pointer;
-}
-
-.checkbox-color:hover,
-.checkbox-color:focus {
-  color: #663d15;
 }
 
 .checkbox-color {
@@ -1988,11 +2014,30 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   padding-top: 7px;
 }
 
+.checkbox-color:hover::before,
+.checkbox-bluetooth:hover::before,
+.checkbox-bluetooth:hover::after {
+  opacity: 0.6;
+}
+
+.color>input:disabled+label,
+.bluetooth>input:disabled+label {
+  color: #a6a6a6;
+}
+
+.color>input:disabled+label::before,
+.bluetooth>input:disabled+label::before,
+.bluetooth>input:disabled+label::after {
+  opacity: 0.25;
+}
+
 /* Стили товаров */
 .goods-item-image {
   position: relative;
   order: -1;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  min-height: 360px;
+  background-color: #eeeeee;
 }
 
 .goods-pop-up {
@@ -2007,6 +2052,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
+  /* flex-grow: 0; */
 }
 
 
@@ -2048,4 +2094,10 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 .compare {
   margin-top: 16px;
   margin-left: 21px;
+}
+
+.goods-item-image {
+  line-height: 0;
+  min-width: 360px;
+  min-height: 380px;
 }
