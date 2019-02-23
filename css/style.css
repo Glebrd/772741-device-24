@@ -233,6 +233,7 @@ img {
 
 .button:hover {
   background-image: linear-gradient(#f0c52e, #f0c52e);
+  cursor: pointer;
 }
 
 .button:active {
@@ -429,8 +430,8 @@ a.user-navigation-username {
 }
 
 button.button {
-background-image: linear-gradient(180deg, transparent, transparent 19px, #f0c52e 20px, #f0c52e 27px, transparent 27px, transparent 40px);
-background: transparent;
+  background: transparent;
+  background-image: linear-gradient(180deg, transparent, transparent 19px, #f0c52e 20px, #f0c52e 27px, transparent 27px, transparent 40px);
 }
 
 .category-title {
@@ -523,6 +524,10 @@ background: transparent;
 .goods-item-image img:hover {
   background-color: #eeeeee;
   opacity: 0.7;
+}
+
+.goods-item-image>img:hover+.goods-pop-up {
+  display: block;
 }
 
 .compare {
@@ -1662,11 +1667,6 @@ a.social-button {
   position: relative;
 }
 
-.goods-pop-up {
-  position: absolute;
-  top: 270px;
-}
-
 .breadcrumbs {
   margin-left: 20px;
 }
@@ -1975,9 +1975,9 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 }
 
 .checkbox-bluetooth {
-padding-left: 39px;
-margin-bottom: 11px;
-cursor: pointer;
+  padding-left: 39px;
+  margin-bottom: 11px;
+  cursor: pointer;
 }
 
 .filter-button {
@@ -1997,8 +1997,9 @@ cursor: pointer;
 
 .goods-pop-up {
   position: absolute;
-  bottom: 800px;
-  left: 60px;
+  top: 167px;
+  left: 80px;
+  display: none;
 }
 
 
@@ -2020,10 +2021,10 @@ cursor: pointer;
   margin-bottom: 36px;
 }
 
-.goods-info h4{
+.goods-info h4 {
   margin-top: 5px;
-margin-bottom: 0;
-max-width: 285px;
+  margin-bottom: 0;
+  max-width: 285px;
 }
 
 .goods-item:nth-child(2)>.goods-info h4 {
@@ -2033,6 +2034,18 @@ max-width: 285px;
 .goods-item:nth-child(4)>.goods-info h4 {
   max-width: 220px;
 }
+
 .goods-item-price {
   padding-top: 8px;
+}
+
+.put-in-basket {
+  width: 200px;
+  padding-right: 21px;
+  z-index: 1100;
+}
+
+.compare {
+  margin-top: 16px;
+  margin-left: 21px;
 }
