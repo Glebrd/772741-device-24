@@ -26,7 +26,6 @@ html {
   box-sizing: border-box;
 }
 
-
 .content-box-compontent {
   box-sizing: content-box;
 }
@@ -106,7 +105,6 @@ img {
 .search-form:focus-within>.button-search:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .search-form {
   width: 441px;
@@ -200,14 +198,14 @@ img {
 
 .slider-title-number {
   color: #ffffff;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 179px;
   font-weight: 800;
   line-height: 179.2px;
 }
 
 .slider-description {
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -215,7 +213,7 @@ img {
 
 .button {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -243,7 +241,7 @@ img {
 
 .features-definition {
   color: #000000;
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -260,7 +258,7 @@ img {
 
 .category-name {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -280,7 +278,7 @@ img {
 
 .service-name {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -303,7 +301,7 @@ img {
 
 .about-title {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -315,7 +313,7 @@ img {
 
 .about-partners-item {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
@@ -323,7 +321,7 @@ img {
 
 .contacts-title {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -375,7 +373,7 @@ a.user-navigation-username {
 }
 
 .footer-site-navigation .site-navigation-item {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -436,7 +434,7 @@ button.button {
 
 .category-title {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
@@ -449,7 +447,7 @@ button.button {
 .breadcrumbs-item,
 .sort-item a {
   color: rgba(0, 0, 0, 0.3);
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -467,18 +465,16 @@ button.button {
 .sort-item a:active,
 .sort-item-current a {
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
 }
 
-
-
 .filter-header,
 .sort-header {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -525,7 +521,7 @@ button.button {
 .sort-up.active,
 .sort-down.active,
 .sort-up:active,
-.sort-down:active{
+.sort-down:active {
   opacity: 1;
 }
 
@@ -542,7 +538,7 @@ button.button {
 
 .goods-item-name {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -550,7 +546,7 @@ button.button {
 
 .goods-item-price {
   color: #464646;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -566,7 +562,7 @@ button.button {
 
 .compare {
   line-height: 20px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   border: none;
@@ -609,7 +605,7 @@ button.button {
   padding-right: 30px;
   padding-top: 22px;
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -637,7 +633,7 @@ button.button {
 
 .page-number a {
   color: rgba(0, 0, 0, 0.3);
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
 }
@@ -659,10 +655,8 @@ button.button {
   padding: 0 20px;
 }
 
-
 .header {
   min-height: 226px;
-
 }
 
 .header-top {
@@ -797,7 +791,6 @@ footer {
   display: flex;
 }
 
-
 .main-middle-container {
   display: flex;
   margin: 0 auto;
@@ -812,13 +805,6 @@ footer {
 
 .main-middle-wrapper {
   background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
-  /* background: 0 0/50% 100% linear-gradient(180deg, #dcdcdc 5%, transparent 5%); */
-  /* 0 0/50% 100% linear-gradient(90deg, #efefef 50%, #efefef 50%); */
-
-  /* background-position: left bottom; */
-  /* background-repeat: no-repeat;
-} 
-*/
 }
 
 .main-controls {
@@ -827,7 +813,6 @@ footer {
 }
 
 .filter {
-  /* max-width: 328px; */
   min-width: 328px;
 }
 
@@ -920,11 +905,6 @@ header {
   display: none;
 }
 
-/* .footer-top>.user-navigation-logged-in>li:first-child {
-  min-width: 212px;
-} */
-
-
 .user-navigation-logged-out li:first-child {
   margin-top: 0px;
   min-width: 234px;
@@ -974,7 +954,6 @@ header {
   padding-left: 17px;
   position: relative;
 }
-
 
 .user-navigation-basket::before {
   content: "";
@@ -1049,9 +1028,6 @@ a.user-navigation-username {
   z-index: 20;
   font-size: 0;
 }
-
-
-
 
 #first-slide:checked~.features-slider #slide1,
 #second-slide:checked~.features-slider #slide2,
@@ -1166,8 +1142,6 @@ li.third-slide {
   bottom: 146px;
 }
 
-
-
 .dropdown {
   position: relative;
   padding-right: 20px;
@@ -1217,7 +1191,6 @@ li.third-slide {
   list-style: none;
   padding-right: 19px;
 }
-
 
 .category-list {
   padding-left: 0;
@@ -1296,7 +1269,6 @@ a.category-link {
   width: 132px;
 }
 
-
 .virtual-reality:after,
 .monopod:after,
 .action-cameras:after,
@@ -1370,7 +1342,6 @@ a.category-link {
   padding-left: 4px;
   margin-bottom: 23px;
 }
-
 
 #middle-slider-first-slide:checked~.middle-slider-wrapper>.middle-slider-slider-controls label:first-child,
 #middle-slider-second-slide:checked~.middle-slider-wrapper>.middle-slider-slider-controls label:nth-child(2),
@@ -1726,8 +1697,6 @@ a.social-button {
   margin-right: 40px;
 }
 
-
-
 .breadcrumbs>li:not(:last-of-type)::before,
 .breadcrumbs>li:not(:last-of-type)::after {
 
@@ -1745,7 +1714,6 @@ a.social-button {
   transform: translateY(-3px) rotate(45deg);
 }
 
-
 .breadcrumbs>li:not(:last-of-type)::before {
   transform: translateY(3px) rotate(-45deg);
   width: 5px;
@@ -1758,9 +1726,7 @@ a.social-button {
 }
 
 .breadcrumbs>li:not(:first-child)::after {
-
   right: -24px;
-
 }
 
 .main-top {
@@ -1773,7 +1739,6 @@ a.social-button {
   margin: 0;
   padding: 0;
   border: none;
-
 }
 
 .range-filter {
@@ -1843,12 +1808,10 @@ a.social-button {
   vertical-align: top;
   min-width: 91px;
   font-size: 14px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   color: #cfcfcf;
 }
-
-
 
 .price-controls input {
   width: 50px;
@@ -1858,13 +1821,9 @@ a.social-button {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
 }
-
-/* .max-price {
-  text-align: right;
-} */
 
 .filter-form fieldset {
   border: 0;
@@ -1884,9 +1843,7 @@ a.social-button {
 
 .checkbox-color {
   position: relative;
-
   padding-left: 30px;
-
   cursor: pointer;
 }
 
@@ -1925,7 +1882,7 @@ input[type="checkbox"]+.checkbox-color::before {
 }
 
 .filter-form legend {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1969,7 +1926,6 @@ input[type="checkbox"]+.checkbox-color::before {
   min-height: 149px;
 }
 
-
 .checkbox-bluetooth {
   position: relative;
 }
@@ -1985,7 +1941,6 @@ input[type="radio"]+.checkbox-bluetooth::before {
   top: 2px;
   content: '';
 }
-
 
 input[type="radio"]:checked+.checkbox-bluetooth::after {
   position: absolute;
@@ -2032,6 +1987,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 }
 
 /* Стили товаров */
+
 .goods-item-image {
   position: relative;
   order: -1;
@@ -2047,14 +2003,11 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   display: none;
 }
 
-
 .goods-item:nth-child(1n) {
   display: flex;
   flex-direction: column;
   margin-right: 40px;
-  /* flex-grow: 0; */
 }
-
 
 .goods-item:nth-child(2n) {
   margin-right: 0;
