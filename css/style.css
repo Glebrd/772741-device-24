@@ -2149,17 +2149,20 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 
 .write-us-form label:first-child {
   display: inline-block;
+  vertical-align: top;
   width: 360px;
 }
 
 .write-us-form label:nth-child(2) {
   display: inline-block;
+  vertical-align: top;
   width: 360px;
   margin-left: 36px;
 }
 
 .write-us-form label:nth-child(3) {
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   margin-top: 30px;
 }
