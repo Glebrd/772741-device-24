@@ -418,13 +418,22 @@ a.user-navigation-username {
 .write-us-form textarea {
   resize: none;
   background-color: rgba(242, 242, 242, 1);
-  padding-top: 18px;
+  padding-top: 8px;
   padding-left: 20px;
   width: 760px;
   height: 156px;
   border: none;
   font: inherit;
   color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input::placeholder,
+.write-us-form textarea::placeholder {
+  opacity: 0.4;
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 button.button {
@@ -493,6 +502,7 @@ button.button {
 .sort-item {
   font-size: 14px;
   font-weight: 400;
+  flex-shrink: 0;
 }
 
 .sort-order {
@@ -782,8 +792,11 @@ footer {
   flex-wrap: wrap;
 }
 
-.modal-map,
 .modal-write-us {
+  display: none;
+}
+
+.modal-map {
   display: none;
 }
 
@@ -848,6 +861,7 @@ footer {
   display: flex;
   margin-top: 8px;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 li.first-slide {
@@ -1632,7 +1646,8 @@ a.social-button {
 }
 
 .social-button:hover,
-.developer-logo:hover {
+.social-button:focus,
+.developer-logo:hover {   
   opacity: 0.6;
 }
 
@@ -1640,8 +1655,9 @@ a.social-button {
   opacity: 0.1;
 }
 
-.developer-logo:active {
-  opacity: 0.3;
+.developer-logo:active,
+.developer-logo:focus {
+  opacity: 0.3;   
 }
 
 .social-button-facebook::after {
@@ -2125,13 +2141,10 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   padding-left: 102px;
   padding-right: 50px;
   padding-top: 91px;
-   padding-bottom: 91px;
-  font-family: "Gilroy";
+  padding-bottom: 91px;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
-}
-
-.write-us-form {
 }
 
 .write-us-form label:first-child {
@@ -2162,10 +2175,66 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 }
 
 .write-us-form textarea {
-width: 760px;
+  width: 760px;
 }
 
-.write-us-form-botton {
-  margin-top: 35px;
-  padding-right: 43px;
+.write-us-form-button {
+  margin-top: 34px;
+  margin-left: -2px;
+  padding-right: 20px;
+  width: 200px;
 }
+
+.modal-close {
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  background-color: #f7e296;
+  opacity: 0.5;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active,
+.modal-close:active::before,
+.modal-close:active::after
+{
+  opacity: 0.3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  width: 36px;
+  height: 2px;
+  content: '';
+  background-color: #fff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-map {
+  top: 120px;
+  left: 50%;
+  width: 960px;
+  height: 559px;
+  margin-left: -495px;
+}
+
+.modal-map iframe {
+border: none;}

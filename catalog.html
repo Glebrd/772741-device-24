@@ -15,7 +15,7 @@
       <nav class="header-navigation">
         <a href="index.html"><img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
         <div class="header-top">
-          <form class="search-form" action="" method="get">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-input" name="search" placeholder="поиск по сайту" type="search">
             <button type="submit" class="button-search">Найти</button>
           </form>
@@ -71,12 +71,10 @@
             <li class="sort-item sort-item-current"><a href="#">По цене</a></li>
             <li class="sort-item"><a href="#">По типу</a></li>
             <li class="sort-item"><a href="#">По популярности</a></li>
-            <li class="sort-option"><a href="#" aria-label="По возрастанию"></a></li>
-            <li class="sort-option sort-option-current"><a href="#" aria-label="По убыванию"></a></li>
           </ul>
           <span class="sort-order">
-            <a href="#" class="sort-up"></a>
-            <a href="#" class="sort-down active"></a>
+            <a href="#" class="sort-up" aria-label="По возрастанию"></a>
+            <a href="#" class="sort-down active" aria-label="По убыванию"></a>
           </span>
         </section>
 
@@ -85,6 +83,7 @@
     <div class="main-middle-wrapper">
       <div class="main-middle-container">
         <section class="filter">
+          <h3 class="visually-hidden">Фильтр товаров</h3>
           <form action="https://echo.htmlacademy.ru" class="filter-form">
             <fieldset class="price-filter">
               <legend class="filter-title">Стоимость</legend>
@@ -128,7 +127,7 @@
             <h3 class="visually-hidden">Список товаров</h3>
             <ul class="goods-list">
               <li class="goods-item">
-                <div class="goods-info">
+                <div class="goods-info" tabindex="1">
                   <h4>
                     <a class="goods-item-name" href="#">Любительская селфи-палка</a>
                   </h4>
@@ -230,7 +229,7 @@
           <li><a class="social-button social-button-instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
           <li><a class="social-button social-button-twitter" href="#" aria-label="Мы в Твиттере"></a></li>
         </ul>
-        <div class="developer-logo"></div>
+        <a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»"></a>
       </div>
     </div>
   </footer>

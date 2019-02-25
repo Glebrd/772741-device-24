@@ -16,7 +16,7 @@
         <img class="logo" src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»">
         <div class="header-top">
 
-          <form class="search-form" action="" method="get">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-input" name="search" placeholder="Поиск по сайту" type="search">
             <button type="submit" class="button-search">Найти</button>
           </form>
@@ -239,7 +239,7 @@
         <a class="map" href="img/bigmap.jpg">
           <img src="img/map.jpg" width="560" height="222" alt="Карта">
         </a>
-        <a href="contacts.html" class="contact-us button">Напишите нам</a>
+        <a href="#" class="contact-us button">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -273,15 +273,12 @@
     </div>
   </footer>
 
-  <section class="modal modal-map">
+  <section class="modal-map modal">
     <h2 class="visually-hidden">
       Как до нас добраться
     </h2>
-    <p>
-      <img src="img/bigmap.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
-    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2674.6641227666814!2d37.52767064369921!3d55.68698014387136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1551094836802" width="960" height="559" style="border:0" allowfullscreen></iframe>
     <button class="modal-close" type="button">
-      Закрыть
     </button>
   </section>
   <section class="modal modal-write-us">
@@ -289,16 +286,15 @@
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <label>Ваше имя: <input class="write-us-form-name" type="text" name="name" placeholder="Имя Фамилия"></label>
       <label>Ваш e-mail: <input class="write-us-form-email" type="email" name="email" placeholder="email@example.com"></label>
-      <label>Текст письма: <textarea class="write-us-form-letter-text" type="text" name="letter-text" placeholder="В свободной форме"></textarea></label>
-      <button class="button write-us-form-botton" type="submit">
+      <label>Текст письма: <textarea class="write-us-form-letter-text" name="letter-text" placeholder="В свободной форме"></textarea></label>
+      <button class="button write-us-form-button" type="submit">
         Отправить
       </button>
     </form>
     <button class="modal-close" type="button">
-      Закрыть
     </button>
   </section>
-<script src="js/js.js"></script>
+  <script src="js/js.js"></script>
 </body>
 
 </html>
