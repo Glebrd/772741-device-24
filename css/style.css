@@ -85,7 +85,7 @@ img {
 
 }
 
-.search-form:focus-within .button-search {
+/* .search-form:focus-within .button-search {
   width: 83px;
   height: 49px;
   border: 2px transparent;
@@ -104,7 +104,34 @@ img {
 
 .search-form:focus-within>.button-search:active {
   color: rgba(255, 255, 255, 0.3);
+} */
+
+.search-input:focus+.button-search {
+  width: 85px;
+  height: 49px;
+  border: 2px transparent;
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  background: transparent;
+  float: right;
+  color: #000000;
+  cursor: pointer;
 }
+
+.search-input:focus+.button-search:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-input:focus+.button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* .search-form {
+  width: 441px;
+} */
 
 .search-form {
   width: 441px;
@@ -121,26 +148,51 @@ img {
   outline: none;
 }
 
-.search-form:focus-within {
+/* .search-form:focus-within {
   height: 49px;
   border-right: 2px solid #000000;
   border-bottom: 2px solid #000000;
   background: transparent;
   width: 441px;
+} */
+
+.search-input:focus {
+  height: 49px;
+  border-bottom: 2px solid #000000;
+  background: transparent;
+  width: 356px;
 }
 
 .search-form:hover .search-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-form:focus-within .search-input {
+/* .search-form:focus-within .search-input {
+  color: rgba(0, 0, 0, 1);
+} */
+
+.search-input:focus {
   color: rgba(0, 0, 0, 1);
 }
+
+/* .button-search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+} */
 
 .button-search:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #000000;
+  width: 85px;
+  height: 49px;
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  float: right;
+  cursor: pointer;
 }
+
 
 .user-navigation,
 .dropdown-list,
@@ -1051,12 +1103,14 @@ a.user-navigation-username {
 
 .features-table th {
   padding-top: 7px;
+  display: block;
 }
 
 .features-table tr {
   display: flex;
   flex-direction: column;
   padding-right: 71px;
+  display: block;
 }
 
 .features-table tbody {
@@ -1446,7 +1500,6 @@ li.services-third-slide::before {
   min-height: 562px;
   display: flex;
   flex-direction: column;
-
 }
 
 .about .button,
@@ -1455,6 +1508,9 @@ li.services-third-slide::before {
   padding-right: 19px;
   width: 260px;
   display: block;
+}
+
+.filler {
 }
 
 .about-title {
@@ -1647,7 +1703,7 @@ a.social-button {
 
 .social-button:hover,
 .social-button:focus,
-.developer-logo:hover {   
+.developer-logo:hover {
   opacity: 0.6;
 }
 
@@ -1657,7 +1713,7 @@ a.social-button {
 
 .developer-logo:active,
 .developer-logo:focus {
-  opacity: 0.3;   
+  opacity: 0.3;
 }
 
 .social-button-facebook::after {
@@ -2207,8 +2263,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 
 .modal-close:active,
 .modal-close:active::before,
-.modal-close:active::after
-{
+.modal-close:active::after {
   opacity: 0.3;
 }
 
@@ -2240,4 +2295,5 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 }
 
 .modal-map iframe {
-border: none;}
+  border: none;
+}
