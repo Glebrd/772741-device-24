@@ -17,7 +17,7 @@
         <div class="header-top">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-input" name="search" placeholder="поиск по сайту" type="search">
-            <button type="submit" class="button-search">Найти</button>
+            <button type="submit" class="button-search" tabindex="-1">Найти</button>
           </form>
           <ul class="user-navigation user-navigation-logged-in">
             <li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
@@ -127,26 +127,23 @@
             <h3 class="visually-hidden">Список товаров</h3>
             <ul class="goods-list">
               <li class="goods-item">
-                <div class="goods-info" tabindex="1">
+                <div class="goods-item-image">
+                  <img src="img/product1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+
+                  <div class="goods-pop-up">
+                    <button class="button put-in-basket">В корзину</button>
+                    <button class="compare">Добавить к сравнению</button>
+                  </div>
+
+                </div>
+                <div class="goods-info">
                   <h4>
                     <a class="goods-item-name" href="#">Любительская селфи-палка</a>
                   </h4>
                   <span class="goods-item-price">500 руб.</span>
                 </div>
-                <div class="goods-item-image">
-                  <img src="img/product1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  <div class="goods-pop-up">
-                    <button class="button put-in-basket">В корзину</button>
-                    <button class="compare">Добавить к сравнению</button>
-                  </div>
-                </div>
               </li>
               <li class="goods-item">
-                <div class="goods-info">
-                  <h4>
-                    <a class="goods-item-name" href="#">Профессиональная селфи-палка</a> </h4> <span class="goods-item-price">1
-                    500 руб.</span>
-                </div>
                 <div class="goods-item-image">
                   <img src="img/product2.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods-pop-up">
@@ -154,15 +151,14 @@
                     <button class="compare">Добавить к сравнению</button>
                   </div>
                 </div>
-
-              </li>
-              <li class="goods-item">
                 <div class="goods-info">
                   <h4>
-                    <a class="goods-item-name" href="#">Непотопляемая селфи-палка</a>
-                  </h4>
-                  <span class="goods-item-price">2 500 руб.</span>
+                    <a class="goods-item-name" href="#">Профессиональная селфи-палка</a> </h4> <span class="goods-item-price">1
+                    500 руб.</span>
                 </div>
+              </li>
+              <li class="goods-item">
+
                 <div class="goods-item-image">
                   <img src="img/product3.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods-pop-up">
@@ -170,21 +166,28 @@
                     <button class="compare">Добавить к сравнению</button>
                   </div>
                 </div>
-              </li>
-              <li class="goods-item">
                 <div class="goods-info">
                   <h4>
-                    <a class="goods-item-name" href="#">Селфи-палка «Следуй за мной»</a>
+                    <a class="goods-item-name" href="#">Непотопляемая селфи-палка</a>
                   </h4>
-                  <span class="goods-item-price">4 900 руб.</span>
+                  <span class="goods-item-price">2 500 руб.</span>
                 </div>
-                <div class="goods-item-image">
+              </li>
+              <li class="goods-item">
+
+                <div class="goods-item-image new-product">
 
                   <img src="img/product4.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="goods-pop-up">
                     <button class="button put-in-basket">В корзину</button>
                     <button class="compare">Добавить к сравнению</button>
                   </div>
+                </div>
+                <div class="goods-info">
+                  <h4>
+                    <a class="goods-item-name" href="#">Селфи-палка «Следуй за мной»</a>
+                  </h4>
+                  <span class="goods-item-price">4 900 руб.</span>
                 </div>
               </li>
             </ul>
