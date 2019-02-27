@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +21,6 @@
           </form>
           <ul class="user-navigation user-navigation-logged-in">
             <li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
-            <li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
             <li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
             <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
             <li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
@@ -53,8 +52,8 @@
     </header>
   </div>
   <main>
+    <h1 class="visually-hidden">Каталог интернет-магазина гаджетов «Девайс»</h1>
     <div class="main-top container">
-      <h1 class="visually-hidden">Каталог интернет-магазина гаджетов «Девайс»</h1>
       <h2 class="category-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
@@ -72,10 +71,10 @@
             <li class="sort-item"><a href="#">По типу</a></li>
             <li class="sort-item"><a href="#">По популярности</a></li>
           </ul>
-          <span class="sort-order">
-            <a href="#" class="sort-up" aria-label="По возрастанию"></a>
-            <a href="#" class="sort-down active" aria-label="По убыванию"></a>
-          </span>
+          <ul class="sort-order">
+            <li><a href="#" class="sort-up" aria-label="По возрастанию"></a></li>
+            <li></li><a href="#" class="sort-down active" aria-label="По убыванию"></a></li>
+          </ul>
         </section>
       </div>
     </div>
@@ -205,7 +204,6 @@
         <a href="index.html"><img class="footer-logo" src="img/logo-orange.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Девайс»"></a>
         <ul class="footer-user-navigation user-navigation-logged-in">
           <li><a class="user-navigation-username user-navigation-item logged-in" href="#">Валентин Петухов</a></li>
-          <li><a class="user-navigation-login user-navigation-item logged-out" href="#">Войти</a></li>
           <li><a class="user-navigation-logout user-navigation-item logged-in" href="#">Выйти</a></li>
           <li><a class="user-navigation-compare user-navigation-item" href="#">Сравнить</a></li>
           <li><a class="user-navigation-basket user-navigation-item" href="#">Корзина</a></li>
