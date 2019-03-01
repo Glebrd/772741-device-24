@@ -11,6 +11,9 @@ link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
 });
 
+var zzz = document.querySelector('.buttonx');
+console.log(zzz);
+
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
@@ -38,3 +41,33 @@ mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
 });
+
+// function handleKeys(evt) {
+//   if (evt.keyCode === 13) {
+//     var evt = document.createEvent("MouseEvents");
+//     evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+//     var run = document.querySelector('.buttonx');
+//     run.dispatchEvent(evt);
+//   }
+// }
+// document.addEventListener('keydown', handleKeys, true);
+
+
+
+var run = document.querySelectorAll('.buttonx');
+
+function handleKeys(evt) {
+  if (evt.keyCode === 13) {
+    for (let index = 0; index < run.length; index++) {
+
+    var evt = document.createEvent("MouseEvents");
+    evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    run[index].dispatchEvent(evt);
+  }
+}
+}
+document.addEventListener('keydown', handleKeys, true);
+
+
+
+

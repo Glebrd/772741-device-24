@@ -177,7 +177,6 @@ img {
   color: #000000;
 }
 
-.user-navigation a:hover .user-navigation a::before,
 .user-navigation a:hover,
 .dropdown-list a:hover,
 .site-navigation a:hover,
@@ -250,7 +249,8 @@ img {
   vertical-align: top;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-image: linear-gradient(#f0c52e, #f0c52e);
   cursor: pointer;
 }
@@ -308,13 +308,14 @@ img {
   list-style: none;
 }
 
-.brands-item {
+.brands-item a {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.2;
 }
 
-.brands-item:hover {
+.brands-item:hover a,
+.brands-item a:focus {
   -webkit-filter: none;
   filter: none;
   opacity: 1;
@@ -350,7 +351,7 @@ img {
   line-height: 48px;
 }
 
-footer {
+.footer {
   background-color: #464646;
   border: 1px solid transparent;
 }
@@ -822,7 +823,7 @@ button.button {
   padding-bottom: 80px;
 }
 
-footer {
+.footer {
   min-height: 323px;
 }
 
@@ -937,7 +938,7 @@ li.services-second-slide {
 }
 
 /* Микросетка */
-header {
+.header {
   padding-top: 22px;
   padding-left: 59px;
   padding-right: 55px;
@@ -1224,7 +1225,7 @@ li.third-slide {
   width: 16px;
   height: 2px;
   margin-bottom: -1px;
-  content: '';
+  content: "";
   opacity: 1;
   background-color: #b9a975;
 }
@@ -1771,7 +1772,7 @@ a.social-button {
   width: 4px;
   height: 1.3px;
   margin-bottom: -3px;
-  content: '';
+  content: "";
   background-color: #000;
 }
 
@@ -2006,7 +2007,7 @@ input[type="radio"]+.checkbox-bluetooth::before {
   position: absolute;
   left: -1px;
   top: 2px;
-  content: '';
+  content: "";
 }
 
 input[type="radio"]:checked+.checkbox-bluetooth::after {
@@ -2019,7 +2020,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   margin-left: 8px;
   border-radius: 50%;
   background: #000;
-  content: '';
+  content: "";
 }
 
 .checkbox-bluetooth {
@@ -2260,6 +2261,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   display: inline-block;
   vertical-align: top;
   width: 360px;
+  color: #000000;
 }
 
 .write-us-form label:nth-child(2) {
@@ -2267,6 +2269,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   vertical-align: top;
   width: 360px;
   margin-left: 36px;
+  color: #000000;
 }
 
 .write-us-form label:nth-child(3) {
@@ -2274,6 +2277,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   vertical-align: top;
   width: 100%;
   margin-top: 30px;
+  color: #000000;
 }
 
 .write-us-form label:nth-child(3)>textarea {
@@ -2327,7 +2331,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   left: 9px;
   width: 36px;
   height: 2px;
-  content: '';
+  content: "";
   background-color: #fff;
 }
 
@@ -2389,4 +2393,10 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   display: block;
   width: 260px;
   height: 100px;
+}
+
+.modal-map {
+    background-image: url("../img/bigmap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
