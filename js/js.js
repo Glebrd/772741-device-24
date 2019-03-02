@@ -53,21 +53,18 @@ mapClose.addEventListener("click", function (evt) {
 // document.addEventListener('keydown', handleKeys, true);
 
 
-
-var run = document.querySelectorAll('.buttonx');
+document.addEventListener('keydown', handleKeys, true);
 
 function handleKeys(evt) {
   if (evt.keyCode === 13) {
-    for (let index = 0; index < run.length; index++) {
+    var trg1 = evt.target;
+    console.log(trg1);
 
-    var evt = document.createEvent("MouseEvents");
-    evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    run[index].dispatchEvent(evt);
+    var evt1 = document.createEvent("MouseEvents");
+    evt1.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    trg1.focus();
+    trg1.dispatchEvent(evt1);
+    console.log(trg1);
+    trg1.focus();
   }
 }
-}
-document.addEventListener('keydown', handleKeys, true);
-
-
-
-
