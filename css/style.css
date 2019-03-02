@@ -1239,6 +1239,7 @@ li.third-slide {
 }
 
 .dropdown:hover+.dropdown-list,
+.dropdown:focus+.dropdown-list,
 .dropdown-list:hover {
   position: absolute;
   right: 0px;

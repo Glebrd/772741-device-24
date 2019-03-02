@@ -17,7 +17,7 @@
         <div class="header-top">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-input" name="search" placeholder="Поиск по сайту" type="search">
-            <button type="submit" class="button-search">Найти</button>
+            <button type="submit" class="button-search" tabindex="-1">Найти</button>
           </form>
           <ul class="user-navigation user-navigation-logged-out">
             <li><a class="user-navigation-login user-navigation-item" href="#">Войти</a></li>
@@ -53,13 +53,13 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
     <div class="container slider-container">
-      <input class="visually-hidden" type="radio" id="first-slide" name="toggle" checked>
-      <input class="visually-hidden" type="radio" id="second-slide" name="toggle">
-      <input class="visually-hidden" type="radio" id="third-slide" name="toggle">
+      <input class="visually-hidden" type="radio" id="first-slide" name="toggle" checked tabindex="-1">
+      <input class="visually-hidden" type="radio" id="second-slide" name="toggle" tabindex="-1">
+      <input class="visually-hidden" type="radio" id="third-slide" name="toggle" tabindex="-1">
       <div class="slider-controls">
-        <label for="first-slide">Первый</label>
-        <label for="second-slide">Второй</label>
-        <label for="third-slide">Третий</label>
+        <label for="first-slide" tabindex="0">Первый</label>
+        <label for="second-slide" tabindex="0">Второй</label>
+        <label for="third-slide" tabindex="0">Третий</label>
       </div>
       <ul class="features-slider">
         <li class="first-slide slide" id="slide1">
@@ -70,7 +70,7 @@
             <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a href="#" class="about-details button">Подробнее</a>
+            <a href="#" class="about-details button" tabindex="0">Подробнее</a>
             <table class="features-table">
               <tr>
                 <td class="features-definition">8,5 м</td>
@@ -165,14 +165,16 @@
     </section>
     <section class="services">
       <div class="container">
-        <input class="visually-hidden" type="radio" id="middle-slider-first-slide" name="middle-slider-toggle" checked>
-        <input class="visually-hidden" type="radio" id="middle-slider-second-slide" name="middle-slider-toggle">
-        <input class="visually-hidden" type="radio" id="middle-slider-third-slide" name="middle-slider-toggle">
+        <input class="visually-hidden" type="radio" id="middle-slider-first-slide" name="middle-slider-toggle" tabindex="-1"
+          checked>
+        <input class="visually-hidden" type="radio" id="middle-slider-second-slide" name="middle-slider-toggle"
+          tabindex="-1">
+        <input class="visually-hidden" type="radio" id="middle-slider-third-slide" name="middle-slider-toggle" tabindex="-1">
         <div class="middle-slider-wrapper">
           <div class="middle-slider-slider-controls">
             <label for="middle-slider-first-slide" class="button buttonx" tabindex="0">Доставка</label>
-<label for="middle-slider-second-slide" class="button" tabindex="0">Гарантия</label>
-<label for="middle-slider-third-slide" class="button" tabindex="0">Кредит</label>
+            <label for="middle-slider-second-slide" class="button" tabindex="0">Гарантия</label>
+            <label for="middle-slider-third-slide" class="button" tabindex="0">Кредит</label>
           </div>
           <ul class="services-slider">
             <li class="services-first-slide" id="middle-slider-slide1">
