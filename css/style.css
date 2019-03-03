@@ -1587,27 +1587,81 @@ li.services-third-slide::before {
 }
 
 .footer-user-navigation {
-  margin-top: 13px;
+  margin-top: 15px;
   margin-left: auto;
 }
 
+.footer-user-navigation.user-navigation-logged-in .user-navigation-logout {
+  padding-left: 20px;
+}
+
 .footer-user-navigation.user-navigation-logged-out li:first-child {
-  margin-top: 4px;
+  margin-top: 2px;
   min-width: 107px;
 }
 
+.footer-user-navigation.user-navigation-logged-out li:nth-child(2) {
+  min-width: 82px;
+}
+
+.footer-user-navigation.user-navigation-logged-out li:nth-child(3) {
+  min-width: 126px;
+}
+
+.user-navigation.user-navigation-logged-in li:first-child {
+  min-width: 190px;
+}
+
+.footer-user-navigation.user-navigation-logged-in li:nth-child(2) {
+  min-width: 40px;
+}
+
+.footer-user-navigation.user-navigation-logged-in li:nth-child(3) {
+  min-width: 139px;
+}
+
+.user-navigation.user-navigation-logged-in li:nth-child(4) {
+  min-width: 127px;
+}
+
+
+
+.footer-user-navigation.user-navigation-logged-in .user-navigation-logout {
+  padding-left: 20px;
+}
+
+.footer-user-navigation.user-navigation-logged-out li:first-child {
+  margin-top: 2px;
+  min-width: 107px;
+}
+
+.footer-user-navigation.user-navigation-logged-out li:nth-child(2) {
+  min-width: 82px;
+}
+
+.footer-user-navigation.user-navigation-logged-out li:nth-child(3) {
+  min-width: 126px;
+}
+
 .footer-user-navigation.user-navigation-logged-in li:first-child {
-  margin-top: 4px;
-  min-width: 149px;
+  min-width: 152px;
+}
+
+.footer-user-navigation.user-navigation-logged-in li:nth-child(2) {
+  min-width: 40px;
+}
+
+.footer-user-navigation.user-navigation-logged-in li:nth-child(3) {
+  min-width: 139px;
+}
+
+.footer-user-navigation.user-navigation-logged-in li:nth-child(4) {
+  min-width: 120px;
 }
 
 .footer-user-navigation.user-navigation-logged-in li:nth-child(4)>a {
   margin-top: 0px;
   margin-left: 44px;
-}
-
-.footer-user-navigation.user-navigation-logged-in .user-navigation-logout {
-  padding-left: 20px;
 }
 
 .footer-top .user-navigation-login::before,
