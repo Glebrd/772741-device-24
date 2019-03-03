@@ -129,6 +129,7 @@ img {
   border-bottom: 2px solid #000000;
   background: transparent;
   width: 356px;
+  padding-bottom: 11px;
 }
 
 .search-form:hover .search-input::-webkit-input-placeholder {
@@ -1098,20 +1099,45 @@ a.user-navigation-username {
 }
 
 .features-table th {
-  padding-top: 7px;
+  padding-top: 2px;
   display: block;
+}
+
+.features-table>tbody tr:first-child {
+  min-width: 156px;
+}
+
+.features-table>tbody tr:nth-child(2) {
+  min-width: 142px;
 }
 
 .features-table tr {
   display: flex;
   flex-direction: column;
-  padding-right: 71px;
+  padding-right: 68px;
   display: block;
+}
+
+.features-table>tbody tr:first-child>th{
+  padding-left: 4px;
+}
+
+.features-table>tbody tr:nth-child(2)>th {
+  margin-left: 2px;
+}
+
+.features-table>tbody tr:nth-child(3)>th {
+  margin-left: 5px;
+}
+
+.features-table>tbody tr:nth-child(2)>tr {
+  margin-right: -2px;
 }
 
 .features-table tbody {
   display: flex;
   padding-top: 45px;
+  margin-left: -5px;
 }
 
 .slider-container {
@@ -1187,7 +1213,7 @@ li.third-slide {
 }
 
 .features-table tr:nth-child(2) {
-  padding-left: 7px;
+  padding-left: 3px;
 }
 
 .third-slide>.item-info>.features-table tr:first-child {
@@ -1417,8 +1443,10 @@ a.category-link {
   padding-top: 8px;
   padding-right: 125px;
   box-sizing: border-box;
-  margin-top: -3px;
+  margin-top: -2px;
   margin-bottom: 26px;
+  padding-left: 0px;
+  padding-right: 126px;
 }
 
 .services-slider {
@@ -1608,20 +1636,24 @@ li.services-third-slide::before {
   min-width: 126px;
 }
 
+.user-navigation {
+  margin-top: 18px;
+}
+
 .user-navigation.user-navigation-logged-in li:first-child {
-  min-width: 190px;
+  min-width: 172px;
 }
 
-.footer-user-navigation.user-navigation-logged-in li:nth-child(2) {
-  min-width: 40px;
+.user-navigation.user-navigation-logged-in li:nth-child(2) {
+  min-width: 62px;
 }
 
-.footer-user-navigation.user-navigation-logged-in li:nth-child(3) {
-  min-width: 139px;
+.user-navigation.user-navigation-logged-in li:nth-child(3) {
+  min-width: 120px;
 }
 
 .user-navigation.user-navigation-logged-in li:nth-child(4) {
-  min-width: 127px;
+  margin-left: 0px;
 }
 
 
@@ -1644,7 +1676,7 @@ li.services-third-slide::before {
 }
 
 .footer-user-navigation.user-navigation-logged-in li:first-child {
-  min-width: 152px;
+  min-width: 150px;
 }
 
 .footer-user-navigation.user-navigation-logged-in li:nth-child(2) {
@@ -2468,4 +2500,13 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 .goods-item-image:hover .compare
 {
   opacity: 1;
+}
+
+.button-services {
+  padding-right: 12px;
+}
+
+.main-top {
+  border-bottom: 1px solid transparent;
+
 }
