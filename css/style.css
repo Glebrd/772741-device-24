@@ -129,7 +129,7 @@ img {
   border-bottom: 2px solid #000000;
   background: transparent;
   width: 356px;
-  padding-bottom: 11px;
+  padding-bottom: 10.5px;
 }
 
 .search-form:hover .search-input::-webkit-input-placeholder {
@@ -2413,7 +2413,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
   margin-top: 3px;
   margin-left: -2px;
   color: rgb(70, 70, 70, 0.4);
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
