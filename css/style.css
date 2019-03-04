@@ -165,7 +165,6 @@ img {
   cursor: pointer;
 }
 
-
 .user-navigation,
 .dropdown-list,
 .site-navigation {
@@ -418,17 +417,56 @@ a.user-navigation-username {
 
 .write-us-form input[type="text"],
 .write-us-form input[type="email"] {
-  font: inherit;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0.5);
   border: none;
   width: 360px;
   height: 50px;
   padding-left: 20px;
-  color: rgba(70, 70, 70, 0.4);
+  color: rgb(70, 70, 70, 1);
+}
+
+.write-us-form input[type="text"]:hover,
+.write-us-form input[type="email"]:hover,
+.write-us-form textarea:hover {
+  background-color: rgb(235, 235, 235, 0.8);
 }
 
 .write-us-form input[type="text"]:invalid,
 .write-us-form input[type="email"]:invalid {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 1);
+}
+
+.write-us-form input[type="text"]:invalid:focus,
+.write-us-form input[type="email"]:invalid:focus {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 1);
+}
+
+.write-us-form input {
+  box-shadow: none;
+}
+
+.write-us-form input[type="text"]:invalid::-webkit-input-placeholder,
+.write-us-form input[type="email"]:invalid::-webkit-input-placeholder {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input[type="text"]:invalid:-ms-input-placeholder,
+.write-us-form input[type="email"]:invalid:-ms-input-placeholder {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input[type="text"]:invalid::-ms-input-placeholder,
+.write-us-form input[type="email"]:invalid::-ms-input-placeholder {
+  background-color: rgba(237, 181, 181, 0.5);
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form input[type="text"]:invalid::placeholder,
+.write-us-form input[type="email"]:invalid::placeholder {
   background-color: rgba(237, 181, 181, 0.5);
   color: rgba(70, 70, 70, 0.4);
 }
@@ -444,20 +482,22 @@ a.user-navigation-username {
 
 .write-us-form textarea {
   resize: none;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 0.5);
   padding-top: 8px;
   padding-left: 20px;
   width: 760px;
   height: 156px;
   border: none;
   font: inherit;
-  color: rgba(70, 70, 70, 0.4);
+  color: rgba(70, 70, 70, 1);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .write-us-form input::-webkit-input-placeholder,
 .write-us-form textarea::-webkit-input-placeholder {
-  opacity: 0.4;
-  color: #464646;
+  color: rgb(70, 70, 70, 0.4);
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -465,8 +505,7 @@ a.user-navigation-username {
 
 .write-us-form input:-ms-input-placeholder,
 .write-us-form textarea:-ms-input-placeholder {
-  opacity: 0.4;
-  color: #464646;
+  color: rgb(70, 70, 70, 0.4);
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -474,8 +513,7 @@ a.user-navigation-username {
 
 .write-us-form input::-ms-input-placeholder,
 .write-us-form textarea::-ms-input-placeholder {
-  opacity: 0.4;
-  color: #464646;
+  color: rgb(70, 70, 70, 0.4);
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -483,8 +521,7 @@ a.user-navigation-username {
 
 .write-us-form input::placeholder,
 .write-us-form textarea::placeholder {
-  opacity: 0.4;
-  color: #464646;
+  color: rgb(70, 70, 70, 0.4);
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -769,7 +806,6 @@ button.button {
   background-image: linear-gradient(180deg, rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5) 113px, rgba(255, 255, 255, 1) 113px, rgba(255, 255, 255, 1) 594px);
 }
 
-
 .categories {
   min-height: 322px;
 }
@@ -918,7 +954,6 @@ li.first-slide {
   display: none;
 }
 
-
 li.second-slide {
   display: none;
 }
@@ -959,7 +994,6 @@ li.services-second-slide {
 .site-navigation-delivery {
   margin-right: 35px;
 }
-
 
 .user-navigation-logged-out .logged-in {
   display: none;
@@ -1118,7 +1152,7 @@ a.user-navigation-username {
   display: block;
 }
 
-.features-table>tbody tr:first-child>th{
+.features-table>tbody tr:first-child>th {
   padding-left: 4px;
 }
 
@@ -1152,7 +1186,6 @@ a.user-navigation-username {
 #second-slide:checked~.slider-controls label:nth-child(2):before,
 #third-slide:checked~.slider-controls label:nth-child(3):before {
   content: "";
-
   position: absolute;
   display: inline-block;
   vertical-align: top;
@@ -1351,7 +1384,6 @@ a.category-link {
   top: 32px;
   left: 55px;
 }
-
 
 .quadrocopter:before {
   background-image: url("../img/poppular-6.svg");
@@ -1655,8 +1687,6 @@ li.services-third-slide::before {
 .user-navigation.user-navigation-logged-in li:nth-child(4) {
   margin-left: 0px;
 }
-
-
 
 .footer-user-navigation.user-navigation-logged-in .user-navigation-logout {
   padding-left: 20px;
@@ -2373,6 +2403,19 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 .write-us-form input {
   margin-top: 3px;
   margin-left: -2px;
+  color: rgb(70, 70, 70, 0.4);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.write-us-form input:focus {
+  padding-left: 17px;
+}
+
+.write-us-form textarea:focus {
+  padding-left: 17px;
+  padding-top: 5px;
 }
 
 .write-us-form textarea {
@@ -2493,12 +2536,11 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 
 .put-in-basket:focus,
 .compare:focus {
- opacity: 1;
+  opacity: 1;
 }
 
 .goods-item-image:hover .put-in-basket,
-.goods-item-image:hover .compare
-{
+.goods-item-image:hover .compare {
   opacity: 1;
 }
 

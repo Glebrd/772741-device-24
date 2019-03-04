@@ -42,29 +42,14 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.classList.remove("modal-show");
 });
 
-// function handleKeys(evt) {
-//   if (evt.keyCode === 13) {
-//     var evt = document.createEvent("MouseEvents");
-//     evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-//     var run = document.querySelector('.buttonx');
-//     run.dispatchEvent(evt);
-//   }
-// }
-// document.addEventListener('keydown', handleKeys, true);
-
-
 document.addEventListener('keydown', handleKeys, true);
-
 function handleKeys(evt) {
   if (evt.keyCode === 13) {
     var trg1 = evt.target;
-    console.log(trg1);
-
     var evt1 = document.createEvent("MouseEvents");
     evt1.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
     trg1.focus();
     trg1.dispatchEvent(evt1);
-    console.log(trg1);
     trg1.focus();
   }
 }
