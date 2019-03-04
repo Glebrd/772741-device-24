@@ -1420,6 +1420,15 @@ a.category-link {
   opacity: 1;
 }
 
+.virtual-reality:focus:after,
+.monopod:focus:after,
+.action-cameras:focus:after,
+.bracelets:focus:after,
+.smart-watches:focus:after,
+.quadrocopter:focus:after {
+  opacity: 1;
+}
+
 .virtual-reality:active:before,
 .virtual-reality:active h2,
 .monopod:hover:active:before,
@@ -2423,7 +2432,7 @@ input[type="radio"]:checked+.checkbox-bluetooth::after {
 }
 
 .write-us-form-button {
-  margin-top: 34px;
+  margin-top: 29px;
   margin-left: -2px;
   padding-right: 20px;
   width: 200px;
