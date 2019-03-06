@@ -112,9 +112,6 @@ img {
   border: 0;
   width: 356px;
   padding-left: 40px;
-  /* padding-top: 19px; */
-  /* padding-bottom: 15px; */
-  /* padding-bottom: 30px;*/
   padding-top: 19px;
   outline: 0;
   font-family: "Open Sans", Arial, sans-serif;
@@ -131,8 +128,6 @@ img {
   background: 0 0;
   width: 356px;
   padding-bottom: 14px;
-  /* padding-bottom: 12px */
-    /* padding-top: 21px; */
 }
 
 .search-form:hover .search-input::-webkit-input-placeholder {
@@ -926,10 +921,6 @@ a.next {
   min-height: 70px;
 }
 
-.filter {
-  /* width: 328px; */
-}
-
 .filter-title {
   color: #000000;
 }
@@ -946,7 +937,6 @@ a.next {
   min-width: 800px;
   padding-left: 71px;
   background-color: #fff;
-  /* min-height: 1217px; */
   min-height: 725px;
   padding-top: 38px;
   display: flex;
@@ -2027,8 +2017,6 @@ a.social-button {
   border: 9px solid #fff;
 }
 
-
-
 .range-controls .toggle-min {
   left: 0
 }
@@ -2636,4 +2624,8 @@ input[type=radio]:checked+.checkbox-bluetooth::after {
 .write-us-form {
   display: flex;
   flex-wrap: wrap;
+}
+
+.goods {
+  width: 800px;
 }
